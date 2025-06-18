@@ -40,7 +40,7 @@ const GalaxyBackground = () => {
 
     const starMaterial = new THREE.PointsMaterial({
       color: 0xffffff,
-      size: 1.5,
+      size: .75,
       sizeAttenuation: true,
       transparent: true,
       depthWrite: false,

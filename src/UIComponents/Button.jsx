@@ -18,7 +18,7 @@ const Button = ({
       className={`
         ${width} ${height} ${background} ${margin}
         rounded-2xl
-        ${border || "border border-gray-400"}
+        ${border}
         active:border-blue-600 active:shadow-gray-600 active:shadow
         font-serif tracking-[.13em] ${hoverBackground}
         capitalize hover:italic active:scale-95 hover:scale-105

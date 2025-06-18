@@ -1,14 +1,14 @@
-import AnimatedBackground from "./components/AnimatedBackground"
 import './App.css'
+import GamePage from './Pages/GamePage';
 
 function App() {
  
 
   return (
     <>
-<AnimatedBackground/>
+  <GamePage/>
     </>
-  )
+  );
 }
 
 export default App

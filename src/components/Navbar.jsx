@@ -5,10 +5,10 @@ import ProfileComponent from "./ProfileComponent";
 
 const Navbar = () => {
   return (
-    <div className="border border-amber-400 h-40 rounded-3xl m-0.5 z-10 flex flex-wrap items-center p-4">
+    <div className="border border-amber-400 h-48 rounded-3xl m-0.5 z-10 flex flex-wrap items-center justify-between p-4">
       <LogoContainer/>
       {/* Desktop Buttons */}
-      <div className="hidden sm:flex space-x-4">
+      <div className="hidden sm:flex space-x-4 border border-amber-800">
         <Button
           border="border-1"
           background="bg-gray-300"

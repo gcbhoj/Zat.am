@@ -4,21 +4,28 @@ import DateTimeComponent from "./DateTimeComponent";
 import { useEffect, useRef, useState } from "react";
 
 const ProfileComponent = () => {
+  const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
+  const profileButtonRef = useRef(null);
+  const [dropDownPos, setDropDownPos] = useState({ top: 25, right: 150 });
 
-    const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
-    const profileButtonRef = useRef(null);
-    const [dropDownPos, setDropDownPos] = useState({ top: 10, right: 100 });
-
-    useEffect(() => {
-        if (isProfileMenuOpen && profileButtonRef.current) {
-            const rect = profileButtonRef.current.getBoundingClientRect();
-
-            setDropDownPos({
-                top: rect.bottom + window.scrollX+5,
-                right:window.innerHeight-rect.right-window.scrollX-20
-            })
-        }
-    },[isProfileMenuOpen])
+  useEffect(() => {
+    if (isProfileMenuOpen && profileButtonRef.current) {
+      const rect = profileButtonRef.current.getBoundingClientRect();
+      if (window.innerWidth < 768) {
+        // Small screens – keep original positioning
+        setDropDownPos({
+          top: rect.bottom + window.scrollY,
+          right: window.innerWidth + rect.right-50,
+        });
+      } else {
+        // Medium and larger screens – position to the left
+        setDropDownPos({
+          top: rect.top + window.scrollY,
+          right: window.innerWidth - rect.right, // 10px buffer
+        });
+      }
+    }
+  }, [isProfileMenuOpen]);
 
   return (
     <div className="border border-blue-400 w-24 h-36 sm:w-24 sm:h-36 md:w-36 md:h-36 flex flex-col">
@@ -28,7 +35,7 @@ const ProfileComponent = () => {
           onClick={() => setIsProfileMenuOpen((prev) => !prev)}
           margin="m-0.5"
           icon={
-            <CgProfile className="text-6xl sm:text-6xl md:text-7xl dark:text-stone-600 text-zinc-400" />
+            <CgProfile className="text-6xl sm:text-6xl md:text-7xl dark:text-stone-600 text-zinc-400 " />
           }
         />
         {isProfileMenuOpen && (
@@ -40,8 +47,8 @@ const ProfileComponent = () => {
               position: "absolute",
             }}
             onMouseLeave={() => setIsProfileMenuOpen(false)}
-                  >
-                      <button/>
+          >
+            <button />
           </div>
         )}
       </div>

@@ -23,7 +23,7 @@ const Button = ({
         font-serif tracking-[.13em] ${hoverBackground}
         capitalize hover:italic active:scale-95 hover:scale-105
         flex items-center justify-center
-        text-[13px] font-semibold ${dark} cursor-pointer
+        text-[13px] font-semibold ${dark} cursor-pointer flex justify-center align-middle place-items-center
       `}
     >
       {icon && (

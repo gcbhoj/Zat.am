@@ -32,7 +32,7 @@ const GamePage = () => {
       {isDark ? <AnimatedBackground /> : <LightBackground />}
 
       {/* Foreground content */}
-      <div className="relative z-10 w-full flex flex-col gap-4">
+      <div className="relative z-10 w-full flex flex-col mt-1">
         <div className="self-end">
           <ColorModeToggle />
         </div>

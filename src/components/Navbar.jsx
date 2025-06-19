@@ -13,20 +13,18 @@ const Navbar = () => {
       <LogoContainer />
 
       {/* Buttons Container (bottom-centered) */}
-      <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex flex-wrap justify-evenly border border-stone-500 m-1">
+      <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex flex-wrap justify-evenly m-1">
         {/* Desktop Buttons */}
-        <div className="hidden sm:flex space-x-4 border border-amber-800 md:flex">
+        <div className="hidden sm:flex space-x-4 md:flex transition-all">
           <Button
-            border="border-1"
             background="bg-gray-300"
             label="home"
             width="w-20"
             height="h-12"
             dark="dark:bg-amber-500"
-            margin="mr-5"
+            margin="mr-5 ml-5"
           />
           <Button
-            border="border-1"
             background="bg-gray-300"
             label="games"
             width="w-28"
@@ -35,7 +33,6 @@ const Navbar = () => {
             margin="mr-5"
           />
           <Button
-            border="border-1"
             background="bg-gray-300"
             label="leaderboard"
             width="w-28"
@@ -44,7 +41,6 @@ const Navbar = () => {
             margin="mr-5"
           />
           <Button
-            border="border-1"
             background="bg-gray-300"
             label="Dashboard"
             width="w-24"
@@ -53,7 +49,6 @@ const Navbar = () => {
             margin="mr-5"
           />
           <Button
-            border="border-1"
             background="bg-gray-300"
             label="about us"
             width="w-24"
@@ -64,45 +59,45 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Icon Buttons */}
-        <div className="flex sm:hidden space-x-4">
+        <div className="flex sm:hidden space-x-4 transition-all">
           <Button
             width="w-10"
             height="h-10"
             icon={<GiHomeGarage className="text-4xl" />}
-            background="bg-gray-500"
-            dark="dark:bg-amber-500"
+            background="text-neutral-900"
+            dark="dark:text-amber-500"
             margin="mr-5"
           />
           <Button
             width="w-10"
             height="h-10"
             icon={<FaGamepad className="text-4xl" />}
-            background="bg-gray-500"
-            dark="dark:bg-amber-500"
+            background="text-neutral-900"
+            dark="dark:text-amber-500"
             margin="mr-5"
           />
           <Button
             width="w-10"
             height="h-10"
             icon={<SiLeaderprice className="text-4xl" />}
-            background="bg-gray-500"
-            dark="dark:bg-amber-500"
+            background="text-neutral-900"
+            dark="dark:text-amber-500"
             margin="mr-5"
           />
           <Button
             width="w-10"
             height="h-10"
             icon={<RiDashboard2Line className="text-4xl" />}
-            background="bg-gray-500"
-            dark="dark:bg-amber-500"
+            background="text-neutral-900"
+            dark="dark:text-amber-500"
             margin="mr-5"
           />
           <Button
             width="w-10"
             height="h-10"
             icon={<FcAbout className="text-4xl" />}
-            background="bg-gray-500"
-            dark="dark:bg-amber-500"
+            background="text-neutral-900"
+            dark="dark:text-amber-500"
             margin="mr-5"
           />
         </div>

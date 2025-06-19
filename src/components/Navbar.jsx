@@ -9,28 +9,29 @@ import { FcAbout } from "react-icons/fc";
 
 const Navbar = () => {
   return (
-    <div className="relative border border-amber-400 h-48 rounded-3xl m-0.5 z-10 flex flex-wrap items-start justify-between p-4">
+    <div className="relative border border-amber-400 h-36 rounded-3xl m-0.5 z-10 px-4 flex items-center justify-between">
+      {/* Left: Logo */}
       <LogoContainer />
 
-      {/* Buttons Container (bottom-centered) */}
-      <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex flex-wrap justify-evenly m-1">
+      {/* Center: Button Group */}
+      <div className="flex flex-col items-center justify-center flex-grow mr-10">
         {/* Desktop Buttons */}
-        <div className="hidden sm:flex space-x-4 md:flex transition-all">
+        <div className="hidden sm:flex transition-all justify-center">
           <Button
             background="bg-gray-300"
             label="home"
             width="w-20"
             height="h-12"
             dark="dark:bg-amber-500"
-            margin="mr-5 ml-5"
+            margin="mr-2 ml-2"
           />
           <Button
             background="bg-gray-300"
             label="games"
-            width="w-28"
+            width="w-20"
             height="h-12"
             dark="dark:bg-amber-500"
-            margin="mr-5"
+            margin="mr-2"
           />
           <Button
             background="bg-gray-300"
@@ -38,15 +39,15 @@ const Navbar = () => {
             width="w-28"
             height="h-12"
             dark="dark:bg-amber-500"
-            margin="mr-5"
+            margin="mr-2"
           />
           <Button
             background="bg-gray-300"
-            label="Dashboard"
+            label="dashboard"
             width="w-24"
             height="h-12"
             dark="dark:bg-amber-500"
-            margin="mr-5"
+            margin="mr-2"
           />
           <Button
             background="bg-gray-300"
@@ -54,56 +55,76 @@ const Navbar = () => {
             width="w-24"
             height="h-12"
             dark="dark:bg-amber-500"
-            margin="mr-5"
+            margin="mr-2"
           />
         </div>
 
-        {/* Mobile Icon Buttons */}
-        <div className="flex sm:hidden space-x-4 transition-all">
-          <Button
-            width="w-10"
-            height="h-10"
-            icon={<GiHomeGarage className="text-4xl" />}
-            background="text-neutral-900"
-            dark="dark:text-amber-500"
-            margin="mr-5"
-          />
-          <Button
-            width="w-10"
-            height="h-10"
-            icon={<FaGamepad className="text-4xl" />}
-            background="text-neutral-900"
-            dark="dark:text-amber-500"
-            margin="mr-5"
-          />
-          <Button
-            width="w-10"
-            height="h-10"
-            icon={<SiLeaderprice className="text-4xl" />}
-            background="text-neutral-900"
-            dark="dark:text-amber-500"
-            margin="mr-5"
-          />
-          <Button
-            width="w-10"
-            height="h-10"
-            icon={<RiDashboard2Line className="text-4xl" />}
-            background="text-neutral-900"
-            dark="dark:text-amber-500"
-            margin="mr-5"
-          />
-          <Button
-            width="w-10"
-            height="h-10"
-            icon={<FcAbout className="text-4xl" />}
-            background="text-neutral-900"
-            dark="dark:text-amber-500"
-            margin="mr-5"
-          />
+        {/* Mobile Buttons */}
+        <div className="flex sm:hidden transition-all justify-center">
+          <div className="relative group mr-5 ml-5">
+            <Button
+              width="w-10"
+              height="h-10"
+              icon={<GiHomeGarage className="text-2xl" />}
+              background="bg-neutral-900"
+              dark="dark:bg-amber-500"
+            />
+            <span className="absolute left-full top-1/5 -translate-y-1/2 ml-1 px-1 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
+              Home
+            </span>
+          </div>
+          <div className="relative group mr-5">
+            <Button
+              width="w-10"
+              height="h-10"
+              icon={<FaGamepad className="text-2xl" />}
+              background="bg-neutral-900"
+              dark="dark:bg-amber-500"
+            />
+            <span className="absolute left-full top-1/5 -translate-y-1/2 ml-1 px-1 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
+              Games
+            </span>
+          </div>
+          <div className="relative group mr-5">
+            <Button
+              width="w-10"
+              height="h-10"
+              icon={<SiLeaderprice className="text-2xl" />}
+              background="bg-neutral-900"
+              dark="dark:bg-amber-500"
+            />
+            <span className="absolute left-full top-1/5 -translate-y-1/2 ml-1 px-1 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
+              Leaderboard
+            </span>
+          </div>
+          <div className="relative group mr-5">
+            <Button
+              width="w-10"
+              height="h-10"
+              icon={<RiDashboard2Line className="text-2xl" />}
+              background="bg-neutral-900"
+              dark="dark:bg-amber-500"
+            />
+            <span className="absolute left-full top-1/5 -translate-y-1/2 ml-1 px-1 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
+              Dashboard
+            </span>
+          </div>
+          <div className="relative group mr-10">
+            <Button
+              width="w-10"
+              height="h-10"
+              icon={<FcAbout className="text-2xl" />}
+              background="bg-neutral-900"
+              dark="dark:bg-amber-500"
+            />
+            <span className="absolute left-full top-1/5 -translate-y-1/2 ml-1 px-1 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
+              About us
+            </span>
+          </div>
         </div>
       </div>
 
-      {/* ProfileComponent pinned to top-right */}
+      {/* Right: Profile */}
       <div className="absolute top-2 right-4">
         <ProfileComponent />
       </div>

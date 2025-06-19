@@ -8,7 +8,7 @@ import { useEffect, useRef, useState } from "react";
 const ProfileComponent = () => {
   const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
   const profileButtonRef = useRef(null);
-  const [dropDownPos, setDropDownPos] = useState({ top: 0, right: 100 });
+  const [dropDownPos, setDropDownPos] = useState({ top: 0, right:50 });
 
   useEffect(() => {
     if (isProfileMenuOpen && profileButtonRef.current) {
@@ -30,7 +30,7 @@ const ProfileComponent = () => {
   }, [isProfileMenuOpen]);
 
   return (
-    <div className="border border-blue-400 sm:w-24 sm:h-[115px] md:w-36 md:h-[118px] flex flex-col">
+    <div className="sm:w-24 sm:h-[115px] md:w-36 md:h-[118px] flex flex-col">
       <div className="relative flex justify-center">
         <Button
           ref={profileButtonRef}
@@ -42,7 +42,7 @@ const ProfileComponent = () => {
         />
         {isProfileMenuOpen && (
           <div
-            className="absolute md:w-24 md:h-24 border flex justify-center"
+            className="absolute md:w-24 md:h-24 flex justify-center"
             style={{
               top: dropDownPos.top,
               right: dropDownPos.right,
@@ -79,30 +79,45 @@ const ProfileComponent = () => {
 
             {/* Mobile Dropdown */}
             <div className="flex md:hidden flex-col transition-all">
-              <Button
-                width="w-10"
-                height="h-10"
-                icon={<GiCaptainHatProfile className="text-2xl" />}
-                background="text-neutral-900"
-                dark="dark:text-amber-500"
-                margin="mr-5"
-              />
-              <Button
-                width="w-10"
-                height="h-10"
-                icon={<SiSimplelogin className="text-2xl" />}
-                background="text-neutral-900"
-                dark="dark:text-amber-500"
-                margin="mr-5"
-              />
-              <Button
-                width="w-10"
-                height="h-10"
-                icon={<SiGnuprivacyguard className="text-2xl" />}
-                background="text-neutral-900"
-                dark="dark:text-amber-500"
-                margin="mr-5"
-              />
+              <div className="relative group">
+                <Button
+                  width="w-10"
+                  height="h-10"
+                  icon={<GiCaptainHatProfile className="text-2xl" />}
+                  background="text-neutral-900"
+                  dark="dark:text-amber-500"
+                  margin="mr-5"
+                />
+                <span className="absolute left-full top-1/5 -translate-y-1/2 ml-1 px-1 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
+                  Profile
+                </span>
+              </div>
+              <div className="relative group">
+                <Button
+                  width="w-10"
+                  height="h-10"
+                  icon={<SiSimplelogin className="text-2xl" />}
+                  background="text-neutral-900"
+                  dark="dark:text-amber-500"
+                  margin="mr-5"
+                />
+                <span className="absolute left-full top-1/5 -translate-y-1/2 ml-1 px-1 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
+                  Login
+                </span>
+              </div>
+              <div className="relative group">
+                <Button
+                  width="w-10"
+                  height="h-10"
+                  icon={<SiGnuprivacyguard className="text-2xl" />}
+                  background="text-neutral-900"
+                  dark="dark:text-amber-500"
+                  margin="mr-5"
+                />
+                <span className="absolute left-full top-1/5 -translate-y-1/2 ml-1 px-1 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
+                  Signup
+                </span>
+              </div>
             </div>
           </div>
         )}

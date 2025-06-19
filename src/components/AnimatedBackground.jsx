@@ -21,10 +21,8 @@ const GalaxyBackground = () => {
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setPixelRatio(window.devicePixelRatio);
 
-    // Galaxy/starfield generation
     const starCount = 6000;
     const positions = new Float32Array(starCount * 3);
-
     for (let i = 0; i < starCount; i++) {
       const x = (Math.random() - 0.5) * 2000;
       const y = (Math.random() - 0.5) * 2000;
@@ -40,7 +38,7 @@ const GalaxyBackground = () => {
 
     const starMaterial = new THREE.PointsMaterial({
       color: 0xffffff,
-      size: .75,
+      size: 0.75,
       sizeAttenuation: true,
       transparent: true,
       depthWrite: false,
@@ -50,27 +48,36 @@ const GalaxyBackground = () => {
     const starField = new THREE.Points(starGeometry, starMaterial);
     scene.add(starField);
 
-    // Animation loop
     const animate = () => {
       starField.rotation.x += 0.0005;
       starField.rotation.y += 0.0007;
-
       renderer.render(scene, camera);
       requestAnimationFrame(animate);
     };
 
     animate();
 
-    // Cleanup
     return () => {
       renderer.dispose();
     };
   }, []);
 
   return (
-    <div className="fixed inset-0 z-[-1]">
-      <canvas ref={canvasRef} className="w-full h-full" />
-    </div>
+    <>
+      {/* Galaxy canvas background */}
+      <div className="fixed inset-0 z-[-2]">
+        <canvas ref={canvasRef} className="w-full h-full" />
+      </div>
+
+      {/* Logo overlay with transparency */}
+      <div className="fixed inset-0 opacity-20 pointer-events-none">
+        <img
+          src="/images/SBCanadaLogo.png"
+          alt="Samskrita Bharati Logo"
+          className="w-full h-full object-contain opacity-80"
+        />
+      </div>
+    </>
   );
 };
 

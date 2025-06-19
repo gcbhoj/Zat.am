@@ -6,7 +6,7 @@ const LightBackground = () => {
       <img
         src="/images/SBCanadaLogo.png"
         alt="Samskrita Bharati Logo"
-        className="w-full h-full object-contain opacity-10"
+        className="w-full h-full object-contain opacity-20"
       />
     </div>
   );

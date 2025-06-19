@@ -37,10 +37,8 @@ const GamePage = () => {
           <ColorModeToggle />
         </div>
 
-        {/* Navbar */}
         <Navbar />
 
-        {/* Other content can go here */}
       </div>
     </div>
   );

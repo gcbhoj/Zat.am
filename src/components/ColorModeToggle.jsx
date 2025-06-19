@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Button from "../UIComponents/Button";
 import { IoMoonOutline } from "react-icons/io5";
 import { GiSunflower } from "react-icons/gi";
@@ -8,9 +8,22 @@ const ColorModeToggle = () => {
     document.documentElement.classList.contains("dark")
   );
 
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme === "dark") {
+      document.documentElement.classList.add("dark");
+      setIsDark(true);
+    } else {
+      document.documentElement.classList.remove("dark");
+      setIsDark(false);
+    }
+  }, []);
+
   const toggleTheme = () => {
-    document.documentElement.classList.toggle("dark");
-    setIsDark(!isDark);
+    const nowDark = !isDark;
+    document.documentElement.classList.toggle("dark", nowDark);
+    localStorage.setItem("theme", nowDark ? "dark" : "light");
+    setIsDark(nowDark);
   };
 
   return (

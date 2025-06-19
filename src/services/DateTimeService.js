@@ -2,7 +2,7 @@ export function getFormattedDateTime(locale = navigator.language) {
   const now = new Date();
     
     const weekday = new Intl.DateTimeFormat(locale, {
-        weekday:"long"
+        weekday:"short"
     }).format(now)
 
   const date = new Intl.DateTimeFormat(locale, {

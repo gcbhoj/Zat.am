@@ -3,13 +3,16 @@ import AnimatedBackground from "../components/AnimatedBackground";
 import LightBackground from "../components/LightBackground";
 import Navbar from "../components/Navbar";
 import ColorModeToggle from "../components/ColorModeToggle";
+import FooterComponent from "../components/FooterComponent";
 
 const GamePage = () => {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
+    // Initialize theme state
     setIsDark(document.documentElement.classList.contains("dark"));
 
+    // Observe theme changes
     const observer = new MutationObserver(() => {
       setIsDark(document.documentElement.classList.contains("dark"));
     });
@@ -19,28 +22,35 @@ const GamePage = () => {
       attributeFilter: ["class"],
     });
 
+    // Clean up observer
     return () => observer.disconnect();
   }, []);
 
   return (
-    <div
-      className={`relative w-full h-screen overflow-hidden ${
-        isDark ? "" : "bg-white"
-      }`}
-    >
-      {/* Backgrounds */}
-      {isDark ? <AnimatedBackground /> : <LightBackground />}
+    <>
+      <div
+        className={`relative  ${
+          isDark ? "" : "bg-white"
+        }`}
+      >
+        {/* Background based on theme */}
+        {isDark ? <AnimatedBackground /> : <LightBackground />}
 
-      {/* Foreground content */}
-      <div className="relative z-10 w-full flex flex-col mt-1">
-        <div className="self-end">
-          <ColorModeToggle />
+        {/* Foreground content */}
+        <div className="relative z-10 w-full flex flex-col mt-1">
+          {/* Color Mode Toggle aligned right */}
+          <div className="self-end">
+            <ColorModeToggle />
+          </div>
+
+          {/* Navbar */}
+          <Navbar />
         </div>
-
-        <Navbar />
-
       </div>
-    </div>
+
+      {/* Footer below full-height section */}
+      <FooterComponent />
+    </>
   );
 };
 

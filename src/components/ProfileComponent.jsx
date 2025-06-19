@@ -8,7 +8,7 @@ import { useEffect, useRef, useState } from "react";
 const ProfileComponent = () => {
   const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
   const profileButtonRef = useRef(null);
-  const [dropDownPos, setDropDownPos] = useState({ top: 0, right:50 });
+  const [dropDownPos, setDropDownPos] = useState({ top: 0, right:70 });
 
   useEffect(() => {
     if (isProfileMenuOpen && profileButtonRef.current) {
@@ -17,7 +17,7 @@ const ProfileComponent = () => {
         // Small screens – position dropdown below the button
         setDropDownPos({
           top: rect.bottom + window.scrollY,
-          right: 10,
+          right: -10,
         });
       } else {
         // Medium and larger screens – position to the left

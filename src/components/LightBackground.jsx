@@ -2,7 +2,7 @@ import React from "react";
 
 const LightBackground = () => {
   return (
-    <div className="fixed inset-0 bg-white z-[-10]">
+    <div className="fixed inset-0 bg-white">
       <img
         src="/images/SBCanadaLogo.png"
         alt="Samskrita Bharati Logo"

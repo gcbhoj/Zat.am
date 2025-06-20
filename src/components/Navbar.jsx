@@ -10,14 +10,14 @@ import { NavLink, Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="relative border border-amber-400 h-36 rounded-3xl m-0.5 z-10 px-4 flex items-center justify-between">
+    <div className="relative border border-amber-400 h-36 rounded-3xl m-0.5 z-10 px-4 flex items-center justify-between ">
       {/* Left: Logo */}
       <LogoContainer />
 
       {/* Center: Button Group */}
-      <div className="flex flex-col items-center justify-center flex-grow mr-10">
+      <div className="flex flex-col items-center justify-center flex-grow mr-10 bg-transparent">
         {/* Desktop Buttons */}
-        <div className="hidden sm:flex transition-all justify-center">
+        <div className="hidden sm:flex transition-all justify-center bg-transparent">
           {[
             { label: "home", width: "w-20", margin: "mr-2 ml-2", to: "/" },
             {

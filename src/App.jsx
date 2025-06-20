@@ -1,14 +1,22 @@
-import './App.css'
-import GamePage from './Pages/GamePage';
+import "./App.css";
+import {
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+} from "react-router-dom";
+import MainLayout from "./Layouts/MainLayout";
+import HomePage from "./Pages/HomePage";
 
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<MainLayout />}>
+      <Route index element={<HomePage />} />
+    </Route>
+  )
+);
 function App() {
- 
-
-  return (
-    <>
-  <GamePage/>
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;

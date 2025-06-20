@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 import ColorModeToggle from "../components/ColorModeToggle";
 import FooterComponent from "../components/FooterComponent";
 
-const GamePage = () => {
+const MainPage = () => {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
@@ -28,11 +28,7 @@ const GamePage = () => {
 
   return (
     <>
-      <div
-        className={`relative  ${
-          isDark ? "" : "bg-white"
-        }`}
-      >
+      <div className={`relative  ${isDark ? "" : "bg-white"}`}>
         {/* Background based on theme */}
         {isDark ? <AnimatedBackground /> : <LightBackground />}
 
@@ -47,11 +43,8 @@ const GamePage = () => {
           <Navbar />
         </div>
       </div>
-
-      {/* Footer below full-height section */}
-      <FooterComponent />
     </>
   );
 };
 
-export default GamePage;
+export default MainPage;

@@ -65,9 +65,8 @@ const Navbar = () => {
             <Button
               width="w-10"
               height="h-10"
-              icon={<GiHomeGarage className="text-2xl" />}
-              background="bg-neutral-900"
-              dark="dark:bg-amber-500"
+              icon={<GiHomeGarage className="text-4xl" />}
+              dark="dark:text-amber-500"
             />
             <span className="absolute left-full top-1/5 -translate-y-1/2 ml-1 px-1 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
               Home
@@ -77,9 +76,8 @@ const Navbar = () => {
             <Button
               width="w-10"
               height="h-10"
-              icon={<FaGamepad className="text-2xl" />}
-              background="bg-neutral-900"
-              dark="dark:bg-amber-500"
+              icon={<FaGamepad className="text-4xl" />}
+              dark="dark:text-amber-500"
             />
             <span className="absolute left-full top-1/5 -translate-y-1/2 ml-1 px-1 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
               Games
@@ -89,9 +87,8 @@ const Navbar = () => {
             <Button
               width="w-10"
               height="h-10"
-              icon={<SiLeaderprice className="text-2xl" />}
-              background="bg-neutral-900"
-              dark="dark:bg-amber-500"
+              icon={<SiLeaderprice className="text-4xl" />}
+              dark="dark:text-amber-500"
             />
             <span className="absolute left-full top-1/5 -translate-y-1/2 ml-1 px-1 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
               Leaderboard
@@ -101,9 +98,8 @@ const Navbar = () => {
             <Button
               width="w-10"
               height="h-10"
-              icon={<RiDashboard2Line className="text-2xl" />}
-              background="bg-neutral-900"
-              dark="dark:bg-amber-500"
+              icon={<RiDashboard2Line className="text-4xl" />}
+              dark="dark:text-amber-500"
             />
             <span className="absolute left-full top-1/5 -translate-y-1/2 ml-1 px-1 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
               Dashboard
@@ -113,9 +109,8 @@ const Navbar = () => {
             <Button
               width="w-10"
               height="h-10"
-              icon={<FcAbout className="text-2xl" />}
-              background="bg-neutral-900"
-              dark="dark:bg-amber-500"
+              icon={<FcAbout className="text-4xl" />}
+              dark="dark:text-amber-500"
             />
             <span className="absolute left-full top-1/5 -translate-y-1/2 ml-1 px-1 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
               About us

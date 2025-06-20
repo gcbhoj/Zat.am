@@ -1,8 +1,10 @@
-import React from 'react'
-
+import SearchBarComponent from "../components/SearchBarComponent"
 const HomePage = () => {
   return (
     <div className=" flex flex-col">
+      <div>
+        <SearchBarComponent/>
+      </div>
       <div className="dark:text-gray-400 text-3xl border-amber-600 border m-5">
         I will be displaying the most popular games in our collection(based on
         times played by users)

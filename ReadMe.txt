@@ -7,3 +7,4 @@ Requirments
 1. npm create vite@latest .
 2. npm install tailwind
 3. npm install three
+4 npm install react-router-dom

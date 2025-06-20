@@ -6,6 +6,7 @@ import ProfileComponent from "./ProfileComponent";
 import { SiLeaderprice } from "react-icons/si";
 import { RiDashboard2Line } from "react-icons/ri";
 import { FcAbout } from "react-icons/fc";
+import { NavLink, Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -17,105 +18,97 @@ const Navbar = () => {
       <div className="flex flex-col items-center justify-center flex-grow mr-10">
         {/* Desktop Buttons */}
         <div className="hidden sm:flex transition-all justify-center">
-          <Button
-            background="bg-gray-300"
-            label="home"
-            width="w-20"
-            height="h-12"
-            dark="dark:bg-amber-500"
-            margin="mr-2 ml-2"
-          />
-          <Button
-            background="bg-gray-300"
-            label="games"
-            width="w-20"
-            height="h-12"
-            dark="dark:bg-amber-500"
-            margin="mr-2"
-          />
-          <Button
-            background="bg-gray-300"
-            label="leaderboard"
-            width="w-28"
-            height="h-12"
-            dark="dark:bg-amber-500"
-            margin="mr-2"
-          />
-          <Button
-            background="bg-gray-300"
-            label="dashboard"
-            width="w-24"
-            height="h-12"
-            dark="dark:bg-amber-500"
-            margin="mr-2"
-          />
-          <Button
-            background="bg-gray-300"
-            label="about us"
-            width="w-24"
-            height="h-12"
-            dark="dark:bg-amber-500"
-            margin="mr-2"
-          />
+          {[
+            { label: "home", width: "w-20", margin: "mr-2 ml-2", to: "/" },
+            {
+              label: "games",
+              width: "w-20",
+              to: "/games",
+              margin: "mr-2",
+            },
+            {
+              label: "leaderboard",
+              width: "w-28",
+              to: "/leaderboard",
+              margin: "mr-2",
+            },
+            {
+              label: "dashboard",
+              width: "w-24",
+              margin: "mr-2",
+              to: "/dashboard",
+            },
+            {
+              label: "about us",
+              width: "w-24",
+              margin: "mr-2",
+              to: "/aboutus",
+            },
+            {},
+          ].map((item, index) => (
+            <div key={index}>
+              <NavLink to={item.to}>
+                <Button
+                  label={item.label}
+                  width={item.width}
+                  background="bg-gray-300"
+                  height="h-12"
+                  dark="dark:bg-amber-500"
+                  margin={item.margin}
+                />
+              </NavLink>
+            </div>
+          ))}
         </div>
 
         {/* Mobile Buttons */}
         <div className="flex sm:hidden transition-all justify-center">
-          <div className="relative group mr-5 ml-5">
-            <Button
-              width="w-10"
-              height="h-10"
-              icon={<GiHomeGarage className="text-4xl" />}
-              dark="dark:text-amber-500"
-            />
-            <span className="absolute left-full top-1/5 -translate-y-1/2 ml-1 px-1 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
-              Home
-            </span>
-          </div>
-          <div className="relative group mr-5">
-            <Button
-              width="w-10"
-              height="h-10"
-              icon={<FaGamepad className="text-4xl" />}
-              dark="dark:text-amber-500"
-            />
-            <span className="absolute left-full top-1/5 -translate-y-1/2 ml-1 px-1 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
-              Games
-            </span>
-          </div>
-          <div className="relative group mr-5">
-            <Button
-              width="w-10"
-              height="h-10"
-              icon={<SiLeaderprice className="text-4xl" />}
-              dark="dark:text-amber-500"
-            />
-            <span className="absolute left-full top-1/5 -translate-y-1/2 ml-1 px-1 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
-              Leaderboard
-            </span>
-          </div>
-          <div className="relative group mr-5">
-            <Button
-              width="w-10"
-              height="h-10"
-              icon={<RiDashboard2Line className="text-4xl" />}
-              dark="dark:text-amber-500"
-            />
-            <span className="absolute left-full top-1/5 -translate-y-1/2 ml-1 px-1 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
-              Dashboard
-            </span>
-          </div>
-          <div className="relative group mr-10">
-            <Button
-              width="w-10"
-              height="h-10"
-              icon={<FcAbout className="text-4xl" />}
-              dark="dark:text-amber-500"
-            />
-            <span className="absolute left-full top-1/5 -translate-y-1/2 ml-1 px-1 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
-              About us
-            </span>
-          </div>
+          {[
+            {
+              icon: <GiHomeGarage className="text-4xl" />,
+              to: "/",
+              label: "Home",
+              margin: "mr-5 ml-5",
+            },
+            {
+              icon: <FaGamepad className="text-4xl" />,
+              to: "/games",
+              label: "Games",
+              margin: "mr-5",
+            },
+            {
+              icon: <SiLeaderprice className="text-4xl" />,
+              to: "/leaderboard",
+              label: "Leaderboard",
+              margin: "mr-5",
+            },
+            {
+              icon: <RiDashboard2Line className="text-4xl" />,
+              to: "/dashboard",
+              label: "Dashboard",
+              margin: "mr-5",
+            },
+            {
+              icon: <FcAbout className="text-4xl" />,
+              to: "/aboutus",
+              label: "About US",
+              margin: "mr-10",
+            },
+          ].map((item, index) => (
+            <div className={`relative group ${item.margin}`} key={index}>
+              <Link to={item.to}>
+                <Button
+                  width="w-10"
+                  height="h-10"
+                  dark="dark:text-amber-500"
+                  icon={item.icon}
+                />
+                <span className="absolute left-full top-1/5 -translate-y-1/2 ml-1 px-1 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
+                  {item.label}
+                </span>
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
 

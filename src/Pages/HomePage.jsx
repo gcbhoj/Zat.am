@@ -3,11 +3,12 @@ import React from 'react'
 const HomePage = () => {
   return (
     <div className=" flex flex-col">
-      <div className="dark:text-gray-400">
-        Most Played Games (max 4 min 2 will be displayed here
+      <div className="dark:text-gray-400 text-3xl border-amber-600 border m-5">
+        I will be displaying the most popular games in our collection(based on
+        times played by users)
       </div>
-      <div className="dark:text-gray-400">
-        Different containers to display different categories(max of 4 games and min2 will be displayed here)
+      <div className="dark:text-gray-400 text-3xl border-amber-600 border m-5">
+       I Will have many faces depending upon the categories i will be displaying a minimum of 2 games and a maximum of 4 games depending upon the size of the window.<br/>I will also be taking you to a page where all games related to the specific category will be displayed.
       </div>
     </div>
   );

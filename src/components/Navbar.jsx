@@ -15,7 +15,7 @@ const Navbar = () => {
       <LogoContainer />
 
       {/* Center: Button Group */}
-      <div className="flex flex-col items-center justify-center flex-grow mr-10 bg-transparent">
+      <div className="flex flex-col items-center justify-center flex-grow mr-20 bg-transparent">
         {/* Desktop Buttons */}
         <div className="hidden sm:flex transition-all justify-center bg-transparent">
           {[
@@ -44,7 +44,6 @@ const Navbar = () => {
               margin: "mr-2",
               to: "/aboutus",
             },
-            {},
           ].map((item, index) => (
             <div key={index}>
               <NavLink to={item.to}>
@@ -53,7 +52,7 @@ const Navbar = () => {
                   width={item.width}
                   background="bg-gray-300"
                   height="h-12"
-                  dark="dark:bg-amber-500"
+                  darkBackground="dark:bg-amber-500"
                   margin={item.margin}
                 />
               </NavLink>

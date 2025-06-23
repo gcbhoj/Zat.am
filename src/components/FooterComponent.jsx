@@ -58,7 +58,7 @@ const FooterComponent = () => {
                 <Button
                   width="w-10"
                   height="h-10"
-                  dark="dark:text-amber-500"
+                  darkText="dark:text-amber-500"
                   icon={<span className="text-2xl">{item.icon}</span>}
                 />
                 <span className="absolute left-full bottom-1/2 -translate-y-1/2 ml-2 px-2 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
@@ -97,7 +97,7 @@ const FooterComponent = () => {
                   width="w-10"
                   height="h-10"
                   icon={<span className="text-2xl">{item.icon}</span>}
-                  dark="dark:text-amber-500"
+                  darkText="dark:text-amber-500"
                 />
               </Link>
               <span className="absolute left-full bottom-1/2 -translate-y-1/2 ml-1 px-2 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
@@ -131,7 +131,7 @@ const FooterComponent = () => {
                   width="w-10"
                   height="h-10"
                   icon={<span className="text-2xl">{item.icon}</span>}
-                  dark="dark:text-amber-500"
+                  darkText="dark:text-amber-500"
                 />
               </Link>
             </div>

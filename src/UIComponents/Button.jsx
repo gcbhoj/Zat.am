@@ -1,7 +1,8 @@
 import React from "react";
 
+
 const Button = ({
-  label,
+  label="",
   height = "",
   width = "",
   background = "",
@@ -10,21 +11,23 @@ const Button = ({
   border = "",
   hoverBackground = "hover:text-sky-600",
   onClick,
-  dark = "",
+  darkText = "",
   fontSize = "text-[13px]",
+  darkBackground = "",
 }) => {
   return (
     <button
       onClick={onClick}
       className={`
         ${width} ${height} ${background} ${margin}
-        rounded-2xl
+        rounded-4xl
         ${border}
         active:border-blue-600 active:shadow-gray-600 active:shadow
         font-serif tracking-[.13em] ${hoverBackground}
-        capitalize hover:italic active:scale-95 hover:scale-105
+        capitalize hover:italic transition delay-150 duration-300 ease-in-out
+        hover:-translate-y-1 hover:scale-110
         flex items-center justify-center
-         font-semibold ${dark} cursor-pointer flex justify-center align-middle place-items-center ${fontSize}
+        font-semibold ${darkText}  cursor-pointer ${fontSize} ${darkBackground}
       `}
     >
       {icon && (

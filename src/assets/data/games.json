@@ -1,0 +1,328 @@
+{
+  "games": [
+    {
+      "gameId": "101",
+      "gameName": "CrossWord Gita Version",
+      "gameCategory": ["TA"],
+      "description": "CrossWord Gita Version is a fun and engaging game.",
+      "gameImage": "./images/crossword.png",
+      "gameLink": "https://gcbhoj.github.io/SBGame001/",
+      "playCount": 347,
+      "totalTimeScreen": 39738,
+      "averageTimePlayed": 114.52,
+      "lastPlayed": "2025-06-18T03:56:01.750950Z",
+      "rating": 4.9,
+      "totalreviews": 142,
+      "developer": "SB_TEAM",
+      "releaseDate": "2023-08-10",
+      "difficulty": "medium",
+      "highScoreDetails": [
+        {
+          "highScore": 8925,
+          "timeStamp": "2025-06-21T03:56:01.750950Z"
+        }
+      ],
+      "averageScore": 7857,
+      "lastUpdated": "2025-06-23T03:56:01.750950Z",
+      "gameVersion": "1.1.0",
+      "isActive": true
+    },
+    {
+      "gameId": "102",
+      "gameName": "Rock Paper Scissors",
+      "gameCategory": ["TA"],
+      "description": "Rock Paper Scissors is a fun and engaging game.",
+      "gameImage": "./images/rockpaperscissors.png",
+      "gameLink": "https://gcbhoj.github.io/SBGame002/",
+      "playCount": 699,
+      "totalTimeScreen": 12462,
+      "averageTimePlayed": 17.83,
+      "lastPlayed": "2025-06-14T03:56:01.751047Z",
+      "rating": 4.7,
+      "totalreviews": 57,
+      "developer": "SB_TEAM",
+      "releaseDate": "2023-08-10",
+      "difficulty": "medium",
+      "highScoreDetails": [
+        {
+          "highScore": 5831,
+          "timeStamp": "2025-06-21T03:56:01.751047Z"
+        }
+      ],
+      "averageScore": 4708,
+      "lastUpdated": "2025-06-23T03:56:01.751047Z",
+      "gameVersion": "1.0.7",
+      "isActive": true
+    },
+    {
+      "gameId": "103",
+      "gameName": "Sudoku",
+      "gameCategory": ["TA"],
+      "description": "Sudoku is a fun and engaging game.",
+      "gameImage": "./images/sudoku.png",
+      "gameLink": "https://gcbhoj.github.io/SBGame003/",
+      "playCount": 831,
+      "totalTimeScreen": 13623,
+      "averageTimePlayed": 16.39,
+      "lastPlayed": "2025-06-18T03:56:01.751095Z",
+      "rating": 4.0,
+      "totalreviews": 104,
+      "developer": "SB_TEAM",
+      "releaseDate": "2023-08-10",
+      "difficulty": "hard",
+      "highScoreDetails": [
+        {
+          "highScore": 8622,
+          "timeStamp": "2025-06-21T03:56:01.751095Z"
+        }
+      ],
+      "averageScore": 8050,
+      "lastUpdated": "2025-06-23T03:56:01.751095Z",
+      "gameVersion": "1.3.0",
+      "isActive": true
+    },
+    {
+      "gameId": "104",
+      "gameName": "TicTac Toe",
+      "gameCategory": ["TA"],
+      "description": "TicTac Toe is a fun and engaging game.",
+      "gameImage": "./images/tictactoe.png",
+      "gameLink": "https://gcbhoj.github.io/SBGame004/",
+      "playCount": 860,
+      "totalTimeScreen": 18863,
+      "averageTimePlayed": 21.93,
+      "lastPlayed": "2025-06-17T03:56:01.751132Z",
+      "rating": 3.7,
+      "totalreviews": 127,
+      "developer": "SB_TEAM",
+      "releaseDate": "2023-08-10",
+      "difficulty": "medium",
+      "highScoreDetails": [
+        {
+          "highScore": 8339,
+          "timeStamp": "2025-06-21T03:56:01.751132Z"
+        }
+      ],
+      "averageScore": 7573,
+      "lastUpdated": "2025-06-23T03:56:01.751132Z",
+      "gameVersion": "1.0.1",
+      "isActive": true
+    },
+    {
+      "gameId": "105",
+      "gameName": "Naama Kim",
+      "gameCategory": ["TA"],
+      "description": "Naama Kim is a fun and engaging game.",
+      "gameImage": "./images/NaamaKim.png",
+      "gameLink": "https://gcbhoj.github.io/SBGame005/",
+      "playCount": 779,
+      "totalTimeScreen": 30641,
+      "averageTimePlayed": 39.33,
+      "lastPlayed": "2025-06-20T03:56:01.751167Z",
+      "rating": 5.0,
+      "totalreviews": 72,
+      "developer": "SB_TEAM",
+      "releaseDate": "2023-08-10",
+      "difficulty": "easy",
+      "highScoreDetails": [
+        {
+          "highScore": 9633,
+          "timeStamp": "2025-06-21T03:56:01.751167Z"
+        }
+      ],
+      "averageScore": 8384,
+      "lastUpdated": "2025-06-23T03:56:01.751167Z",
+      "gameVersion": "1.2.8",
+      "isActive": true
+    },
+    {
+      "gameId": "106",
+      "gameName": "Minesweeper",
+      "gameCategory": ["RG"],
+      "description": "Minesweeper is a fun and engaging game.",
+      "gameImage": "./images/Minesweeper.png",
+      "gameLink": "https://gcbhoj.github.io/SBGame006/",
+      "playCount": 643,
+      "totalTimeScreen": 33677,
+      "averageTimePlayed": 52.37,
+      "lastPlayed": "2025-06-14T03:56:01.751202Z",
+      "rating": 4.7,
+      "totalreviews": 44,
+      "developer": "SB_TEAM",
+      "releaseDate": "2023-08-10",
+      "difficulty": "medium",
+      "highScoreDetails": [
+        {
+          "highScore": 5951,
+          "timeStamp": "2025-06-21T03:56:01.751202Z"
+        }
+      ],
+      "averageScore": 5012,
+      "lastUpdated": "2025-06-23T03:56:01.751202Z",
+      "gameVersion": "1.0.5",
+      "isActive": true
+    },
+    {
+      "gameId": "107",
+      "gameName": "Memory Game",
+      "gameCategory": ["RG"],
+      "description": "Memory Game is a fun and engaging game.",
+      "gameImage": "./images/memorygame.png",
+      "gameLink": "https://gcbhoj.github.io/SBGame007/",
+      "playCount": 540,
+      "totalTimeScreen": 34182,
+      "averageTimePlayed": 63.3,
+      "lastPlayed": "2025-06-14T03:56:01.751238Z",
+      "rating": 4.1,
+      "totalreviews": 16,
+      "developer": "SB_TEAM",
+      "releaseDate": "2023-08-10",
+      "difficulty": "easy",
+      "highScoreDetails": [
+        {
+          "highScore": 5709,
+          "timeStamp": "2025-06-21T03:56:01.751238Z"
+        }
+      ],
+      "averageScore": 5113,
+      "lastUpdated": "2025-06-23T03:56:01.751238Z",
+      "gameVersion": "1.3.8",
+      "isActive": true
+    },
+    {
+      "gameId": "108",
+      "gameName": "Maasaah",
+      "gameCategory": ["RG"],
+      "description": "Maasaah is a fun and engaging game.",
+      "gameImage": "./images/Maasaah.png",
+      "gameLink": "https://gcbhoj.github.io/SBGame008/",
+      "playCount": 591,
+      "totalTimeScreen": 12527,
+      "averageTimePlayed": 21.2,
+      "lastPlayed": "2025-06-20T03:56:01.751302Z",
+      "rating": 5.0,
+      "totalreviews": 14,
+      "developer": "SB_TEAM",
+      "releaseDate": "2023-08-10",
+      "difficulty": "medium",
+      "highScoreDetails": [
+        {
+          "highScore": 7095,
+          "timeStamp": "2025-06-21T03:56:01.751302Z"
+        }
+      ],
+      "averageScore": 5829,
+      "lastUpdated": "2025-06-23T03:56:01.751302Z",
+      "gameVersion": "1.2.3",
+      "isActive": true
+    },
+    {
+      "gameId": "109",
+      "gameName": "SuryaNamaskar",
+      "gameCategory": ["RG"],
+      "description": "SuryaNamaskar is a fun and engaging game.",
+      "gameImage": "./images/suryanamaskar.png",
+      "gameLink": "https://gcbhoj.github.io/SBGame009/",
+      "playCount": 595,
+      "totalTimeScreen": 41450,
+      "averageTimePlayed": 69.66,
+      "lastPlayed": "2025-06-08T03:56:01.751351Z",
+      "rating": 4.7,
+      "totalreviews": 131,
+      "developer": "SB_TEAM",
+      "releaseDate": "2023-08-10",
+      "difficulty": "hard",
+      "highScoreDetails": [
+        {
+          "highScore": 6477,
+          "timeStamp": "2025-06-21T03:56:01.751351Z"
+        }
+      ],
+      "averageScore": 5951,
+      "lastUpdated": "2025-06-23T03:56:01.751351Z",
+      "gameVersion": "1.1.2",
+      "isActive": true
+    },
+    {
+      "gameId": "110",
+      "gameName": "NS_Shaft Game",
+      "gameCategory": ["RG"],
+      "description": "NS_Shaft Game is a fun and engaging game.",
+      "gameImage": "./images/shaftgame.png",
+      "gameLink": "https://gcbhoj.github.io/SBGame010/",
+      "playCount": 877,
+      "totalTimeScreen": 15932,
+      "averageTimePlayed": 18.17,
+      "lastPlayed": "2025-06-19T03:56:01.751386Z",
+      "rating": 3.7,
+      "totalreviews": 166,
+      "developer": "SB_TEAM",
+      "releaseDate": "2023-08-10",
+      "difficulty": "hard",
+      "highScoreDetails": [
+        {
+          "highScore": 6822,
+          "timeStamp": "2025-06-21T03:56:01.751386Z"
+        }
+      ],
+      "averageScore": 6055,
+      "lastUpdated": "2025-06-23T03:56:01.751386Z",
+      "gameVersion": "1.2.4",
+      "isActive": true
+    },
+    {
+      "gameId": "111",
+      "gameName": "Mario",
+      "gameCategory": ["ET"],
+      "description": "Mario is a fun and engaging game.",
+      "gameImage": "./images/mario.png",
+      "gameLink": "https://gcbhoj.github.io/SBGame010/",
+      "playCount": 995,
+      "totalTimeScreen": 41302,
+      "averageTimePlayed": 41.51,
+      "lastPlayed": "2025-06-22T03:56:01.751420Z",
+      "rating": 4.6,
+      "totalreviews": 12,
+      "developer": "SB_TEAM",
+      "releaseDate": "2023-08-10",
+      "difficulty": "hard",
+      "highScoreDetails": [
+        {
+          "highScore": 8302,
+          "timeStamp": "2025-06-21T03:56:01.751420Z"
+        }
+      ],
+      "averageScore": 7802,
+      "lastUpdated": "2025-06-23T03:56:01.751420Z",
+      "gameVersion": "1.2.6",
+      "isActive": true
+    },
+    {
+      "gameId": "112",
+      "gameName": "Super Mario",
+      "gameCategory": ["ET"],
+      "description": "Super Mario is a fun and engaging game.",
+      "gameImage": "./images/supermario.png",
+      "gameLink": "https://gcbhoj.github.io/SBGame010/",
+      "playCount": 616,
+      "totalTimeScreen": 11205,
+      "averageTimePlayed": 18.19,
+      "lastPlayed": "2025-06-09T03:56:01.751454Z",
+      "rating": 4.8,
+      "totalreviews": 131,
+      "developer": "SB_TEAM",
+      "releaseDate": "2023-08-10",
+      "difficulty": "medium",
+      "highScoreDetails": [
+        {
+          "highScore": 9612,
+          "timeStamp": "2025-06-21T03:56:01.751454Z"
+        }
+      ],
+      "averageScore": 8215,
+      "lastUpdated": "2025-06-23T03:56:01.751454Z",
+      "gameVersion": "1.3.9",
+      "isActive": true
+    }
+  ]
+}

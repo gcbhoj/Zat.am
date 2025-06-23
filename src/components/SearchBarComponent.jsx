@@ -6,7 +6,7 @@ import { BsSearchHeart } from "react-icons/bs";
 const SearchBarComponent = () => {
   return (
     <div className="mt-1 m-0.5 mb-0.5 flex flex-col rounded-lg">
-      <div className="h-[105px] rounded-lg flex flex-wrap items-center justify-center gap-2 p-4 z-10 ">
+      <div className="h-[105px] rounded-lg flex flex-wrap items-center justify-center gap-2 p-4 z-10">
         <InputBox
           type="text"
           name="searchGames"

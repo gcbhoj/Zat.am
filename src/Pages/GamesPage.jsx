@@ -1,9 +1,27 @@
-import React from 'react'
+import { useEffect, useState } from "react";
+import { fetchGames } from "../services/JsonDataService";
+import GameDisplay from "../UIComponents/GameDisplay";
 
 const GamesPage = () => {
-  return (
-    <div className='dark:text-gray-400 text-3xl'>I will be displaying all the games in our collection irrespective of categories </div>
-  )
-}
+  const [myGames, setMyGames] = useState([]);
 
-export default GamesPage
+  useEffect(() => {
+    const loadGames = async () => {
+      const data = await fetchGames();
+      setMyGames(data);
+      console.log(data);
+    };
+    loadGames();
+  }, []);
+
+  return (
+
+    <div className="border dark:border-gray-400 m-0.5 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+      {myGames.map((game) => (
+        <GameDisplay key={game.gameId} game={game} />
+      ))}
+    </div>
+  );
+};
+
+export default GamesPage;

@@ -13,3 +13,26 @@ export const fetchGames = async () => {
     return [];
   }
 };
+
+export const fetchByCategory = async (category) => {
+  try {
+    const games = await fetchGames();
+    return games.filter(
+      (game) =>
+        Array.isArray(game.gameCategory) && game.gameCategory.includes(category)
+    );
+  } catch (error) {
+    console.error("Error in fetchByCategory:", error);
+    return [];
+  }
+};
+
+export const fetchByRating = async () => {
+  try {
+    const games = await fetchGames();
+    return games.filter((game) => game.rating >= 4.5);
+  } catch (error) {
+    console.error("Error in fetchByRating:", error); // 🔁 fixed function name in log
+    return [];
+  }
+};

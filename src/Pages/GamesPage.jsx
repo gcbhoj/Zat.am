@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { fetchGames } from "../services/JsonDataService";
-import GameDisplay from "../UIComponents/GameDisplay";
+import GameDisplay from "../components/GameDisplay";
 
 const GamesPage = () => {
   const [myGames, setMyGames] = useState([]);

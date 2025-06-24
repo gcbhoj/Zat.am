@@ -10,7 +10,8 @@ import HomePage from "./Pages/HomePage";
 import GamesPage from "./Pages/GamesPage";
 import LeaderBoardPage from "./Pages/LeaderBoardPage";
 import DashboardPage from "./Pages/DashboardPage";
-import AboutUs  from "./Pages/AboutUs";
+import AboutUs from "./Pages/AboutUs";
+import AllFavoritePage from "./Pages/AllFavoritePage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
       <Route path="/leaderboard" element={<LeaderBoardPage />} />
       <Route path="/dashboard" element={<DashboardPage />} />
       <Route path="/aboutus" element={<AboutUs />} />
+      <Route path="/favorites" element={<AllFavoritePage />} />
     </Route>
   )
 );

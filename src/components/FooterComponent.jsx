@@ -13,7 +13,7 @@ import { MdAttachEmail } from "react-icons/md";
 
 const FooterComponent = () => {
   return (
-    <div className="border border-amber-600 bg-opacity-50 mr-0.5 ml-0.5 mt-1 rounded-2xl grid grid-cols-2 grid-rows-4 sm:grid-cols-2 sm:grid-rows-none">
+    <div className="bg-opacity-50 mr-0.5 ml-0.5 mt-1 rounded-2xl grid grid-cols-2 grid-rows-4 sm:grid-cols-2 sm:grid-rows-none">
       {/* Social Media Section */}
       <div className="row-span-2 m-1 flex flex-col justify-center">
         <p className="font-serif text-center sm:text-sm md:text-base dark:text-gray-300">

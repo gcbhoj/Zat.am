@@ -10,7 +10,7 @@ import { NavLink, Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="relative border border-amber-400 h-36 rounded-3xl m-0.5 z-10 px-4 flex items-center justify-between ">
+    <div className="relative h-36 rounded-3xl m-0.5 z-10 px-4 flex items-center justify-between ">
       {/* Left: Logo */}
       <LogoContainer />
 
@@ -99,10 +99,10 @@ const Navbar = () => {
                 <Button
                   width="w-10"
                   height="h-10"
-                  dark="dark:text-amber-500"
+                  darkText="dark:text-amber-500"
                   icon={item.icon}
                 />
-                <span className="absolute left-full top-1/5 -translate-y-1/2 ml-1 px-1 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
+                <span className="absolute left-full right-1/5 -translate-y-1/2 ml-1 px-1 py-1 text-[10px] text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
                   {item.label}
                 </span>
               </Link>

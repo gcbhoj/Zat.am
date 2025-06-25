@@ -3,7 +3,6 @@ import AnimatedBackground from "../components/AnimatedBackground";
 import LightBackground from "../components/LightBackground";
 import Navbar from "../components/Navbar";
 import ColorModeToggle from "../components/ColorModeToggle";
-import FooterComponent from "../components/FooterComponent";
 
 const MainPage = () => {
   const [isDark, setIsDark] = useState(false);
@@ -35,8 +34,8 @@ const MainPage = () => {
         {/* Foreground content */}
         <div className="relative z-10 w-full flex flex-col mt-1">
           {/* Color Mode Toggle aligned right */}
-          <div className="self-end">
-            <ColorModeToggle />
+          <div className="self-end w-10 h-10">
+            <ColorModeToggle  />
           </div>
 
           {/* Navbar */}

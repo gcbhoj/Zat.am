@@ -10,11 +10,9 @@ const HomePage = () => {
       <div>
         <SearchBarComponent />
       </div>
-      <div className="flex flex-col border">
-        {/* Grid of favorite games */}
+      <div className="flex flex-col mt-5">
         <AllFavoritePage isHome={true} />
 
-        {/* "More" Button positioned at bottom-left */}
         <div className="flex justify-end mr-2 mt-0">
           <NavLink to="/favorites" target="_blank ">
         <MoreButton/>

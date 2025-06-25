@@ -21,27 +21,27 @@ const Navbar = () => {
           {[
             { label: "home", width: "w-20", margin: "mr-2 ml-2", to: "/" },
             {
-              label: "games",
+              label: "collection",
               width: "w-20",
               to: "/games",
-              margin: "mr-2",
+              margin: "mr-5",
             },
             {
               label: "leaderboard",
               width: "w-28",
               to: "/leaderboard",
-              margin: "mr-2",
+              margin: "mr-5",
             },
             {
               label: "dashboard",
               width: "w-24",
-              margin: "mr-2",
+              margin: "mr-5",
               to: "/dashboard",
             },
             {
               label: "about us",
               width: "w-24",
-              margin: "mr-2",
+              margin: "mr-5",
               to: "/aboutus",
             },
           ].map((item, index) => (

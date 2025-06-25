@@ -17,7 +17,7 @@ const ProfileComponent = () => {
           onClick={() => setIsProfileMenuOpen((prev) => !prev)}
           margin="m-0.5"
           icon={
-            <CgProfile className="text-4xl sm:text-6xl md:text-6xl dark:text-stone-600 text-green-700" />
+            <CgProfile className="text-4xl sm:text-6xl md:text-6xl dark:text-amber-500 hover:text-violet-500" />
           }
         />
         {isProfileMenuOpen && (

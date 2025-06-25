@@ -4,7 +4,6 @@ import { CgMore } from "react-icons/cg";
 import { Link } from "react-router-dom";
 import MoreButton from "../UIComponents/MoreButton";
 import CategoryDisplayContainer from "../components/CategoryDisplayContainer";
-import { GameCategory } from "../Models/GameCategory";
 
 const HomePage = () => {
   return (
@@ -16,7 +15,7 @@ const HomePage = () => {
         <AllFavoritePage isHome={true} />
 
         <div className="flex justify-end mr-2 mt-0">
-          <Link to={"/favorites"} target="_blank ">
+          <Link to="/favorites" target="_blank">
             <MoreButton />
           </Link>
         </div>

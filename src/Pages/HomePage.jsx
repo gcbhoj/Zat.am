@@ -16,7 +16,7 @@ const HomePage = () => {
         <AllFavoritePage isHome={true} />
 
         <div className="flex justify-end mr-2 mt-0">
-          <Link to="/favorites" target="_blank ">
+          <Link to={"/favorites"} target="_blank ">
             <MoreButton />
           </Link>
         </div>

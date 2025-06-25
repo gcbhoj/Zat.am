@@ -21,20 +21,20 @@ const Navbar = () => {
           {[
             { label: "home", width: "w-20", margin: "mr-2 ml-2", to: "/" },
             {
-              label: "collection",
+              label: "games",
               width: "w-20",
               to: "/games",
               margin: "mr-5",
             },
             {
               label: "leaderboard",
-              width: "w-28",
+              width: "w-32",
               to: "/leaderboard",
               margin: "mr-5",
             },
             {
               label: "dashboard",
-              width: "w-24",
+              width: "w-32",
               margin: "mr-5",
               to: "/dashboard",
             },
@@ -55,7 +55,7 @@ const Navbar = () => {
                   darkBackground="hover:bg-neutral-600"
                   margin={item.margin}
                   hoverBackground="hover:text-amber-600"
-                  fontSize="text[16px]"
+                  fontSize="text[14px]"
                 />
               </NavLink>
             </div>

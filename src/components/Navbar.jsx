@@ -55,6 +55,7 @@ const Navbar = () => {
                   darkBackground="hover:bg-neutral-600"
                   margin={item.margin}
                   hoverBackground="hover:text-amber-600"
+                  fontSize="text[16px]"
                 />
               </NavLink>
             </div>

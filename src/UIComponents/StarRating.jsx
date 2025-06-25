@@ -34,7 +34,7 @@ const StarRating = ({ rating = 0 }) => {
     return stars;
   };
 
-  return <div className="flex justify-center font-serif"> Rated:{renderStars()}</div>;
+  return <div className="flex justify-center font-serif">{renderStars()}</div>;
 };
 
 export default StarRating;

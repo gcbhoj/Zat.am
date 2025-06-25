@@ -15,7 +15,7 @@ const CategoryDisplayContainer = () => {
   }, []);
 
   return (
-    <div className="border dark:border-gray-400 m-1 flex flex-col p-4">
+    <div className="border dark:border-gray-400 m-1 flex flex-col p-4 z-19">
       <h3 className="text-lg font-semibold mb-2">Category Name: TA</h3>
 
       <ul className="list-disc ml-4">

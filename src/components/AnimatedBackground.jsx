@@ -69,8 +69,6 @@ const GalaxyBackground = () => {
         <canvas ref={canvasRef} className="w-full h-full" />
       </div>
 
-      {/* Logo overlay with transparency */}
-
     </>
   );
 };

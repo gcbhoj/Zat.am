@@ -70,13 +70,7 @@ const GalaxyBackground = () => {
       </div>
 
       {/* Logo overlay with transparency */}
-      <div className="fixed inset-0 opacity-20 pointer-events-none">
-        <img
-          src="/images/SBCanadaLogo.png"
-          alt="Samskrita Bharati Logo"
-          className="w-full h-full object-contain opacity-80"
-        />
-      </div>
+
     </>
   );
 };

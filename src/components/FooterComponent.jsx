@@ -59,9 +59,10 @@ const FooterComponent = () => {
                   width="w-10"
                   height="h-10"
                   darkText="dark:text-amber-500"
+                  hoverBackground="hover:text-violet-500"
                   icon={<span className="text-2xl">{item.icon}</span>}
                 />
-                <span className="absolute left-full bottom-1/2 -translate-y-1/2 ml-2 px-2 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
+                <span className="absolute left-full bottom-1/2 -translate-y-1/2 ml-2 px-2 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10 italic tracking-[1.75px]">
                   {item.label}
                 </span>
               </Link>
@@ -98,9 +99,10 @@ const FooterComponent = () => {
                   height="h-10"
                   icon={<span className="text-2xl">{item.icon}</span>}
                   darkText="dark:text-amber-500"
+                  hoverBackground="hover:text-violet-500"
                 />
               </Link>
-              <span className="absolute left-full bottom-1/2 -translate-y-1/2 ml-1 px-2 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
+              <span className="absolute left-full bottom-1/2 -translate-y-1/2 ml-1 px-2 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10 italic tracking-[1.75px]">
                 {item.label}
               </span>
             </div>
@@ -132,7 +134,11 @@ const FooterComponent = () => {
                   height="h-10"
                   icon={<span className="text-2xl">{item.icon}</span>}
                   darkText="dark:text-amber-500"
+                  hoverBackground="hover:text-violet-500"
                 />
+                <span className="absolute top-full left-1/5 -translate-y-1/2 ml-1 px-1 py-1 text-[10px] text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10 italic tracking-[1.75px]">
+                  {item.label}
+                </span>
               </Link>
             </div>
           ))}

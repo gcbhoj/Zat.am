@@ -17,7 +17,7 @@ const Navbar = () => {
       {/* Center: Button Group */}
       <div className="flex flex-col items-center justify-center flex-grow mr-20 bg-transparent">
         {/* Desktop Buttons */}
-        <div className="hidden sm:flex transition-all justify-center bg-transparent">
+        <div className="hidden sm:flex transition-all justify-center bg-transparent animate-pulse">
           {[
             { label: "home", width: "w-20", margin: "mr-2 ml-2", to: "/" },
             {
@@ -50,10 +50,11 @@ const Navbar = () => {
                 <Button
                   label={item.label}
                   width={item.width}
-                  background="bg-gray-300"
+                  darkText="dark:text-gray-500"
                   height="h-12"
-                  darkBackground="dark:bg-amber-500"
+                  darkBackground="hover:bg-neutral-600"
                   margin={item.margin}
+                  hoverBackground="hover:text-amber-600"
                 />
               </NavLink>
             </div>
@@ -100,9 +101,10 @@ const Navbar = () => {
                   width="w-10"
                   height="h-10"
                   darkText="dark:text-amber-500"
+                  hoverBackground="hover:text-violet-500"
                   icon={item.icon}
                 />
-                <span className="absolute left-full right-1/5 -translate-y-1/2 ml-1 px-1 py-1 text-[10px] text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
+                <span className="absolute bottom-full right-1/5 -translate-y-1/2 ml-1 px-1 py-1 text-[10px] text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10 italic tracking-[1.75px]">
                   {item.label}
                 </span>
               </Link>

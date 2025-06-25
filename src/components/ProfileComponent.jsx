@@ -69,10 +69,11 @@ const ProfileComponent = () => {
                     height="h-8"
                     background="text-neutral-900"
                     darkText="dark:text-amber-500"
+                    hoverBackground="hover:text-violet-500"
                     margin="mr-5"
                     icon={item.icon}
                   />
-                  <span className="absolute right-full top-1/5 -translate-y-1/2 ml-1 px-1 py-1 text-[12px] text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
+                  <span className="absolute right-full top-1/5 -translate-y-1/2 ml-1 px-1 py-1 text-[12px] text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10 italic tracking-[1.75px]">
                     {item.label}
                   </span>
                 </div>

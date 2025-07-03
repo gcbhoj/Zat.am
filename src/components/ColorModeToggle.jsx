@@ -31,9 +31,9 @@ const ColorModeToggle = () => {
       <Button
         width="w-10"
         height="h-10"
-        icon={isDark ? <IoMoonOutline /> : <GiSunflower />}
+        icon={isDark ? <IoMoonOutline className="dark:text-gray-400" /> : <GiSunflower className="text-yellow-400" />}
         onClick={toggleTheme}
-        background="bg-gray-600"
+        hoverBackground= "null"
       />
     </div>
   );

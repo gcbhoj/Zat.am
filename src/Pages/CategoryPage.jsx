@@ -31,10 +31,13 @@ const CategoryPage = () => {
       {games.length === 0 ? (
         <p>NO GAMES FOUND IN THIS CATEGORY</p>
       ) : (
-          <div className="m-0.5 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-            {games.map((game)=>(<GameDisplay key={game.gameId} game={game}/>))}
+        <div className="m-0.5 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+          {games.map((game) => (
+            <GameDisplay key={game.gameId} game={game} />
+          ))}
         </div>
       )}
+      <div className="h-[2px] my-4 mx-5 rounded-full bg-gradient-to-r from-sky-100 to-indigo-300 " />
     </>
   );
 };

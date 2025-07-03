@@ -12,7 +12,7 @@ const Button = ({
   hoverBackground = "hover:text-sky-600",
   onClick,
   darkText = "",
-  fontSize = "text-[13px]",
+  fontSize = "text-[16px]",
   darkBackground = "",
 }) => {
   return (

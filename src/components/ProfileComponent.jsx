@@ -43,6 +43,7 @@ const ProfileComponent = () => {
                   label={item.label}
                   margin="mt-1"
                   dark="dark:bg-amber-400"
+                  fontSize="text-[12px]"
                 />
               ))}
             </div>

@@ -24,7 +24,7 @@ const CategoryDisplayContainer = ({ isHome = false }) => {
     <div>
       {GameCategory.map(({ code, label }) => (
         <div key={code} className="m-0.5 rounded-xl mt-5">
-          <h3 className="text-xl font-semibold mb-4 font-serif flex justify-center">
+          <h3 className="text-xl font-semibold mb-4 font-serif flex justify-center animate-bounce">
             {label} ({code})
           </h3>
 

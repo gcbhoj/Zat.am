@@ -28,7 +28,7 @@ const Navbar = () => {
             },
             {
               label: "leaderboard",
-              width: "w-32",
+              width: "w-36",
               to: "/leaderboard",
               margin: "mr-5",
             },
@@ -40,7 +40,7 @@ const Navbar = () => {
             },
             {
               label: "about us",
-              width: "w-24",
+              width: "w-28",
               margin: "mr-5",
               to: "/aboutus",
             },

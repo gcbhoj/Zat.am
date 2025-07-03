@@ -35,13 +35,14 @@ const MainPage = () => {
         <div className="relative z-10 w-full flex flex-col mt-1">
           {/* Color Mode Toggle aligned right */}
           <div className="self-end w-10 h-10">
-            <ColorModeToggle  />
+            <ColorModeToggle />
           </div>
 
           {/* Navbar */}
           <Navbar />
         </div>
       </div>
+      <div className="h-[2px] my-4 mx-20 rounded-full bg-gradient-to-r from-sky-100 to-indigo-300 " />
     </>
   );
 };

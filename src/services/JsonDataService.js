@@ -36,3 +36,16 @@ export const fetchByRating = async () => {
     return [];
   }
 };
+
+export const fetchByName = async (gameName) => {
+  try {
+    const games = await fetchGames();
+    return games.filter((game) =>
+      game.gameName.toLowerCase().includes(gameName.toLowerCase())
+    );
+  } catch (error) {
+    console.error("Error in fetchByName:", error);
+    return [];
+  }
+};
+

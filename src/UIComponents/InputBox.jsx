@@ -4,11 +4,13 @@ const InputBox = ({
   type = "text",
   width = "w-80",
   height = "h-12",
-  onChange = () => {},
+  onChange = () => { },
+  value =""
 }) => {
   return (
     <div className={`relative mt-1 ${width}`}>
       <input
+        value={value}
         type={type}
         name={name}
         id={name}

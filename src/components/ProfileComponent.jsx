@@ -10,7 +10,7 @@ const ProfileComponent = () => {
   const profileButtonRef = useRef(null);
 
   return (
-    <div className="sm:w-24 sm:h-[115px] md:w-24 md:h-[118px] flex flex-col">
+    <div className="sm:w-16 sm:h-[115px] md:w-24 md:h-[118px] flex ">
       <div className="relative flex justify-center">
         <Button
           ref={profileButtonRef}
@@ -83,9 +83,6 @@ const ProfileComponent = () => {
           </div>
         )}
       </div>
-
-      <hr className="h-1 sm:w-24 md:w-24 rounded-md mx-0.5 bg-gradient-to-r from-sky-500 via-lime-500 to-violet-600" />
-      <DateTimeComponent />
     </div>
   );
 };

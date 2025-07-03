@@ -3,6 +3,7 @@ import { fetchByCategory } from "../services/JsonDataService";
 import { useEffect, useState } from "react";
 import MoreButton from "../UIComponents/MoreButton";
 import GameDisplay from "./GameDisplay";
+import { Link } from "react-router-dom";
 
 const CategoryDisplayContainer = ({ isHome = false }) => {
   const [gamesByCategory, setGamesByCategory] = useState({});
@@ -40,7 +41,9 @@ const CategoryDisplayContainer = ({ isHome = false }) => {
             </p>
           )}
           <div className="flex justify-end mr-2">
-            <MoreButton />
+            <Link to={`/category/${code}`}>
+              <MoreButton />
+            </Link>
           </div>
 
           <div className="h-[2px] my-4 mx-10 rounded-full bg-gradient-to-r from-sky-100 to-indigo-300 " />

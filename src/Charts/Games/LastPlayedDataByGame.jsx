@@ -1,27 +1,27 @@
 import { useEffect, useState } from "react";
+import { fetchLastPlayed } from "../../services/AnalyticsService";
 import { Chart } from "react-google-charts";
-import { fetchPlayCountByGame } from "../../services/AnalyticsService";
 
-const TotalPlayCountByGame = () => {
+const LastPlayedDataByGame = () => {
   const [chartData, setChartData] = useState([]);
 
   useEffect(() => {
     const loadChartData = async () => {
-      const data = await fetchPlayCountByGame();
+      const data = await fetchLastPlayed();
 
       const formattedData = [
-        ["Game Name", "Times Played"],
-        ...data.map((game) => [game.gameName, game.timesPlayed]),
+        ["Game Name", "Last Played"],
+        ...data.map((game) => [game.gameName, game.lastPlayed]),
       ];
-      setChartData(formattedData);
+      setChartData(formattedData)
     };
-    loadChartData();
+    loadChartData()
   }, []);
-
+  
   const options = {
-    title: "Games Vs Times Played",
+    title: "Game Last Played",
     hAxis: {
-      title: "Games",
+      title: "Games Name",
       slantedText: true,
       slantedTextAngle: 90,
       titleTextStyle: { color: "#CE8147", fontSize: 12 },
@@ -32,7 +32,7 @@ const TotalPlayCountByGame = () => {
       },
     },
     vAxis: {
-      title: "Times Played",
+      title: "Last Played",
       titleTextStyle: { color: "#CE8147", fontSize: 12 },
       textStyle: {
         color: "#CE8147",
@@ -45,9 +45,8 @@ const TotalPlayCountByGame = () => {
     backgroundColor: "transparent",
     titleTextStyle: { color: "#CE8147", fontSize: 14 },
   };
-
   return (
-    <div className="border-2 w-full overflow-x-auto p-2 dark:border-gray-400 m-5 dark:text-gray-400 mb-5 rounded-lg">
+    <div className="border-2 w-full overflow-x-auto p-2 dark:border-gray-400 m-5 dark:text-gray-400 mb-5 rounded-lg>LastPlayedDataByGame">
       <div className="min-w-[750px] md:min-w-full">
         {chartData.length > 1 ? (
           <Chart
@@ -67,4 +66,4 @@ const TotalPlayCountByGame = () => {
   );
 };
 
-export default TotalPlayCountByGame;
+export default LastPlayedDataByGame;

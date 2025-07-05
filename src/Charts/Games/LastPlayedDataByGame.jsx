@@ -47,7 +47,7 @@ const LastPlayedDataByGame = () => {
   };
   return (
     <div className="border-2 w-full overflow-x-auto p-2 dark:border-gray-400 m-5 dark:text-gray-400 mb-5 rounded-lg">
-      <div className="min-w-[1000px] overflow-x-auto">
+      <div className="min-w-[1000px]">
         {chartData.length > 1 ? (
           <Chart
             chartType="ColumnChart"

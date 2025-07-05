@@ -42,12 +42,12 @@ const LastPlayedDataByGame = () => {
     },
     legend: "none",
     chartArea: { width: "85%", height: "65%", left: "10%", top: "15%" },
-    backgroundColor: "transparent",
+    backgroundColor: { fill: "transparent" },
     titleTextStyle: { color: "#CE8147", fontSize: 14 },
   };
   return (
-    <div className="border-2 w-full overflow-x-auto p-2 dark:border-gray-400 m-5 dark:text-gray-400 mb-5 rounded-lg>LastPlayedDataByGame">
-      <div className="min-w-[750px] md:min-w-full">
+    <div className="border-2 w-full overflow-x-auto p-2 dark:border-gray-400 m-5 dark:text-gray-400 mb-5 rounded-lg">
+      <div className="min-w-[1000px] overflow-x-auto">
         {chartData.length > 1 ? (
           <Chart
             chartType="ColumnChart"

@@ -62,4 +62,29 @@ export const fetchLastPlayed = async () => {
     return [];
   }
 };
-  
+
+export const fetchHighScores = async () => {
+  try {
+    const gamesData = await fetchGames();
+    return gamesData
+      .filter(
+        (game) =>
+          Array.isArray(game.highScoreDetails) &&
+          game.highScoreDetails.length > 0 &&
+          game.gameName
+      )
+      .map((game) => {
+        const latestScore =
+          game.highScoreDetails[game.highScoreDetails.length - 1];
+        return {
+          gameName: game.gameName,
+          highScore: latestScore.highScore,
+          achievedDate: new Date(latestScore.timeStamp),
+        };
+      });
+  } catch (error) {
+    console.error("Error Fetching Games Data:", error);
+    return [];
+  }
+};
+

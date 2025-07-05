@@ -4,7 +4,6 @@
       "gameId": "101",
       "gameName": "CrossWord Gita Version",
       "gameCategory": ["TA"],
-      "description": "CrossWord Gita Version is a fun and engaging game.",
       "gameImage": "/data/images/crossword.png",
       "gameLink": "https://gcbhoj.github.io/SBGame001/",
       "playCount": 347,
@@ -14,7 +13,7 @@
       "rating": 4.9,
       "totalreviews": 142,
       "developer": "SB_TEAM",
-      "releaseDate": "2023-08-10",
+      "releaseDate": "2020-08-10",
       "difficulty": "medium",
       "highScoreDetails": [
         {
@@ -31,7 +30,6 @@
       "gameId": "102",
       "gameName": "Rock Paper Scissors",
       "gameCategory": ["TA"],
-      "description": "Rock Paper Scissors is a fun and engaging game.",
       "gameImage": "/data/images/rockpaperscissors.png",
       "gameLink": "https://gcbhoj.github.io/SBGame002/",
       "playCount": 699,
@@ -289,7 +287,7 @@
       "highScoreDetails": [
         {
           "highScore": 8302,
-          "timeStamp": "2025-06-21T03:56:01.751420Z"
+          "timeStamp": "2024-06-21T03:56:01.751420Z"
         }
       ],
       "averageScore": 7802,

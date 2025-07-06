@@ -1,0 +1,117 @@
+[
+  {
+    "userId": "U_101",
+    "gamesPlayed": [
+      {
+        "gameId": "G_1001",
+        "highScore": 5000,
+        "averageScore": 4200,
+        "playCount": 18,
+        "totalTimePlayed": 1623,
+        "lastPlayed": "2025-07-05T14:10:00Z",
+        "ratingGiven": 4.5
+      },
+      {
+        "gameId": "G_1002",
+        "highScore": 7500,
+        "averageScore": 6400,
+        "playCount": 22,
+        "totalTimePlayed": 2111,
+        "lastPlayed": "2025-07-03T11:20:00Z",
+        "ratingGiven": 4.8
+      }
+    ]
+  },
+  {
+    "userId": "U_102",
+    "gamesPlayed": [
+      {
+        "gameId": "G_1003",
+        "highScore": 3200,
+        "averageScore": 3000,
+        "playCount": 10,
+        "totalTimePlayed": 840,
+        "lastPlayed": "2025-07-01T16:00:00Z",
+        "ratingGiven": 4.2
+      },
+      {
+        "gameId": "G_1001",
+        "highScore": 4900,
+        "averageScore": 4100,
+        "playCount": 14,
+        "totalTimePlayed": 1350,
+        "lastPlayed": "2025-07-02T14:45:00Z",
+        "ratingGiven": 4.6
+      }
+    ]
+  },
+  {
+    "userId": "U_103",
+    "gamesPlayed": [
+      {
+        "gameId": "G_1002",
+        "highScore": 6700,
+        "averageScore": 5800,
+        "playCount": 30,
+        "totalTimePlayed": 2940,
+        "lastPlayed": "2025-07-04T19:30:00Z",
+        "ratingGiven": 4.9
+      },
+      {
+        "gameId": "G_1004",
+        "highScore": 4500,
+        "averageScore": 4100,
+        "playCount": 17,
+        "totalTimePlayed": 1600,
+        "lastPlayed": "2025-06-30T12:15:00Z",
+        "ratingGiven": 4.4
+      }
+    ]
+  },
+  {
+    "userId": "U_104",
+    "gamesPlayed": [
+      {
+        "gameId": "G_1003",
+        "highScore": 3600,
+        "averageScore": 3400,
+        "playCount": 12,
+        "totalTimePlayed": 1020,
+        "lastPlayed": "2025-07-02T10:00:00Z",
+        "ratingGiven": 3.9
+      },
+      {
+        "gameId": "G_1005",
+        "highScore": 8000,
+        "averageScore": 7300,
+        "playCount": 25,
+        "totalTimePlayed": 3200,
+        "lastPlayed": "2025-07-04T17:20:00Z",
+        "ratingGiven": 5.0
+      }
+    ]
+  },
+  {
+    "userId": "U_105",
+    "gamesPlayed": [
+      {
+        "gameId": "G_1001",
+        "highScore": 5400,
+        "averageScore": 5000,
+        "playCount": 20,
+        "totalTimePlayed": 1800,
+        "lastPlayed": "2025-07-01T08:30:00Z",
+        "ratingGiven": 4.3
+      },
+      {
+        "gameId": "G_1005",
+        "highScore": 9200,
+        "averageScore": 8500,
+        "playCount": 33,
+        "totalTimePlayed": 4100,
+        "lastPlayed": "2025-07-05T15:40:00Z",
+        "ratingGiven": 4.9
+      }
+    ]
+  }
+]

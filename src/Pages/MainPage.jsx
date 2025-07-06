@@ -42,7 +42,7 @@ const MainPage = () => {
           <Navbar />
         </div>
       </div>
-      <div className="h-[2px] my-4 mx-20 rounded-full bg-gradient-to-r from-sky-100 to-indigo-300 " />
+      <div className="h-[2px] my-4 mx-10 rounded-full bg-gradient-to-r from-sky-100 to-indigo-300 " />
     </>
   );
 };

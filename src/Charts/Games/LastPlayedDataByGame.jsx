@@ -46,7 +46,7 @@ const LastPlayedDataByGame = () => {
     titleTextStyle: { color: "#CE8147", fontSize: 14 },
   };
   return (
-    <div className="border-2 w-full overflow-x-auto p-2 dark:border-gray-400 m-5 dark:text-gray-400 mb-5 rounded-lg">
+    <div className="border-2 w-96 overflow-x-auto p-2 dark:border-gray-400 dark:text-gray-400 mb-5 rounded-lg">
       <div className="min-w-[1000px]">
         {chartData.length > 1 ? (
           <Chart

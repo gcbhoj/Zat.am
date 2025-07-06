@@ -13,6 +13,7 @@ import DashboardPage from "./Pages/DashboardPage";
 import AboutUs from "./Pages/AboutUs";
 import AllFavoritePage from "./Pages/AllFavoritePage";
 import CategoryPage from "./Pages/CategoryPage";
+import GameAnalytics from "./Pages/GameAnalytics";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
       <Route path="/favorites" element={<AllFavoritePage />} />
       <Route path="/favorites" element={<AllFavoritePage />} />
       <Route path="/category/:code" element={<CategoryPage />} />
+      <Route path="/gameAnalytics" element={<GameAnalytics />} />
     </Route>
   )
 );

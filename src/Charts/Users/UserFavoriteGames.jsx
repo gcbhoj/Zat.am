@@ -1,30 +1,33 @@
 import { useEffect, useState } from "react";
-import { getUserLoginStatus } from "../../services/UserService";
+import { getUsersFavoriteGames } from "../../services/UserService";
 import { Chart } from "react-google-charts";
 
-const UserLoginStatus = () => {
+const UserFavoriteGames = () => {
   const [chartData, setChartData] = useState([]);
 
   useEffect(() => {
     const loadChartData = async () => {
-      const data = await getUserLoginStatus();
+      const data = await getUsersFavoriteGames();
 
       const formattedData = [
-        ["User Name", "Account Created", "Last Login"],
+        ["User Name", "Favorite Game Count", { role: "tooltip" }],
         ...data.map((user) => [
           user.userName,
-          user.accountCreated,
-          user.lastLogin,
+          user.favoriteGames.length,
+          `Games: ${user.favoriteGames.join(", ")}`,
         ]),
       ];
+
       setChartData(formattedData);
     };
+
     loadChartData();
   }, []);
 
   const options = {
-    title: "User Activity Status",
+    title: "User's Favorite Games",
     curveType: "function",
+
     legend: {
       position: "bottom",
       textStyle: { color: "#CE8147", fontSize: 13 },
@@ -33,14 +36,14 @@ const UserLoginStatus = () => {
     titleTextStyle: { color: "#CE8147", fontSize: 14 },
     chartArea: { width: "85%", height: "65%", left: "10%", top: "15%" },
     hAxis: {
-      title: "Account Created",
+      title: "User Names",
       titleTextStyle: { color: "#CE8147", fontSize: 13 },
       textStyle: { color: "#CE8147", fontSize: 12, fontName: "serif" },
       slantedText: true,
       slantedTextAngle: 90,
     },
     vAxis: {
-      title: "Last Login",
+      title: "Number of Favorite Games",
       titleTextStyle: { color: "#CE8147", fontSize: 13 },
       textStyle: { color: "#CE8147", fontSize: 12, fontName: "serif" },
     },
@@ -67,4 +70,4 @@ const UserLoginStatus = () => {
   );
 };
 
-export default UserLoginStatus;
+export default UserFavoriteGames;

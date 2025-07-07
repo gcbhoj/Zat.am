@@ -58,7 +58,7 @@ export const getUsersFavoriteGames = async () => {
     return [];
   }
 };
-  
+
 export const getNumberOfUsersByQuarter = async () => {
   try {
     const data = await fetchUserDetails();
@@ -98,5 +98,26 @@ export const getNumberOfUsersByQuarter = async () => {
   } catch (error) {
     console.error("Error fetching user details:", error.message);
     return [["Quarter", "Users"]];
+  }
+};
+
+export const getLastPlayedAndLastLogin = async () => {
+  try {
+    const data = await fetchUserDetails();
+
+    if (!data || !Array.isArray(data)) {
+      throw new Error("Failed to retrieve user data");
+    }
+
+    const formattedData = data.map((user) => ({
+      userName: user.displayName,
+      lastLogin: new Date(user.lastLogin),
+      lastPlayed: new Date(user.lastPlayed),
+    }));
+
+    return formattedData;
+  } catch (error) {
+    console.error("Error fetching user details:", error.message);
+    return [];
   }
 };

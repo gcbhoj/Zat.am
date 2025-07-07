@@ -27,7 +27,7 @@ const GamesAndHighScores = () => {
       title: "Game's vs High Score vs Acheived Date",
       legend: { position: "bottom" },
     },
-    backgroundColor: "transparent",
+    backgroundColor: { fill: "transparent" },
     chartArea: { width: "100%", height: "65%", left: "10%", top: "15%" },
     colors: ["#e2431e", "#f1ca3a"],
     curveType: "function", // Smooths the lines

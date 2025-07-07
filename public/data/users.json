@@ -1,0 +1,104 @@
+{
+  "users": [
+    {
+      "userId": "U_101",
+      "displayName": "Bhoj GC",
+      "email": "bhoj@example.com",
+      "profileImage": "https://example.com/profiles/u101.jpg",
+      "createdAt": "2024-12-01T10:00:00Z",
+      "lastLogin": "2025-07-05T12:10:00Z",
+      "roles": ["player"],
+      "favorites": ["G_1001", "G_1005"]
+    },
+    {
+      "userId": "U_102",
+      "displayName": "Anya Patel",
+      "email": "anya.p@example.com",
+      "profileImage": "https://example.com/profiles/u102.jpg",
+      "createdAt": "2025-01-15T08:22:00Z",
+      "lastLogin": "2025-07-04T14:50:00Z",
+      "roles": ["player"],
+      "favorites": ["G_1002", "G_1004"]
+    },
+    {
+      "userId": "U_103",
+      "displayName": "Leo Zhang",
+      "email": "leo.zhang@example.com",
+      "profileImage": "https://example.com/profiles/u103.jpg",
+      "createdAt": "2025-02-03T16:30:00Z",
+      "lastLogin": "2025-07-03T11:00:00Z",
+      "roles": ["player"],
+      "favorites": ["G_1003"]
+    },
+    {
+      "userId": "U_104",
+      "displayName": "Sofia Mendes",
+      "email": "sofia.m@example.com",
+      "profileImage": "https://example.com/profiles/u104.jpg",
+      "createdAt": "2025-01-25T12:05:00Z",
+      "lastLogin": "2025-07-02T17:30:00Z",
+      "roles": ["player", "moderator"],
+      "favorites": ["G_1001", "G_1005", "G_1006"]
+    },
+    {
+      "userId": "U_105",
+      "displayName": "Aarav Mehta",
+      "email": "aarav.m@example.com",
+      "profileImage": "https://example.com/profiles/u105.jpg",
+      "createdAt": "2025-03-11T09:10:00Z",
+      "lastLogin": "2025-07-05T08:45:00Z",
+      "roles": ["player"],
+      "favorites": ["G_1002", "G_1003"]
+    },
+    {
+      "userId": "U_106",
+      "displayName": "Isabella Rossi",
+      "email": "isabella.rossi@example.com",
+      "profileImage": "https://example.com/profiles/u106.jpg",
+      "createdAt": "2025-01-30T14:15:00Z",
+      "lastLogin": "2025-07-01T16:10:00Z",
+      "roles": ["player"],
+      "favorites": ["G_1001", "G_1004"]
+    },
+    {
+      "userId": "U_107",
+      "displayName": "Noah Smith",
+      "email": "noah.smith@example.com",
+      "profileImage": "https://example.com/profiles/u107.jpg",
+      "createdAt": "2025-04-05T10:00:00Z",
+      "lastLogin": "2025-07-05T13:00:00Z",
+      "roles": ["player"],
+      "favorites": ["G_1003"]
+    },
+    {
+      "userId": "U_108",
+      "displayName": "Mia Kwon",
+      "email": "mia.kwon@example.com",
+      "profileImage": "https://example.com/profiles/u108.jpg",
+      "createdAt": "2025-03-20T11:45:00Z",
+      "lastLogin": "2025-07-03T09:20:00Z",
+      "roles": ["player", "beta_tester"],
+      "favorites": ["G_1005", "G_1002"]
+    },
+    {
+      "userId": "U_109",
+      "displayName": "Liam Johnson",
+      "email": "liam.johnson@example.com",
+      "profileImage": "https://example.com/profiles/u109.jpg",
+      "createdAt": "2025-02-14T13:50:00Z",
+      "lastLogin": "2025-07-04T12:35:00Z",
+      "roles": ["player"],
+      "favorites": ["G_1006", "G_1001"]
+    },
+    {
+      "userId": "U_110",
+      "displayName": "Emily Nguyen",
+      "email": "emily.nguyen@example.com",
+      "profileImage": "https://example.com/profiles/u110.jpg",
+      "createdAt": "2025-05-01T07:30:00Z",
+      "lastLogin": "2025-07-05T10:10:00Z",
+      "roles": ["player"],
+      "favorites": ["G_1004"]
+    }
+  ]
+}

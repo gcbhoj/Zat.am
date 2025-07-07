@@ -13,11 +13,11 @@ const LastPlayedDataByGame = () => {
         ["Game Name", "Last Played"],
         ...data.map((game) => [game.gameName, game.lastPlayed]),
       ];
-      setChartData(formattedData)
+      setChartData(formattedData);
     };
-    loadChartData()
+    loadChartData();
   }, []);
-  
+
   const options = {
     title: "Game Last Played",
     hAxis: {
@@ -33,7 +33,7 @@ const LastPlayedDataByGame = () => {
     },
     vAxis: {
       title: "Last Played",
-      titleTextStyle: { color: "#CE8147", fontSize: 12 },
+      titleTextStyle: { color: "#CE8147", fontSize: 14 },
       textStyle: {
         color: "#CE8147",
         fontSize: 13,
@@ -43,7 +43,6 @@ const LastPlayedDataByGame = () => {
     legend: "none",
     chartArea: { width: "85%", height: "65%", left: "10%", top: "15%" },
     backgroundColor: { fill: "transparent" },
-    titleTextStyle: { color: "#CE8147", fontSize: 14 },
   };
   return (
     <div className="border-2 w-96 overflow-x-auto p-2 dark:border-gray-400 dark:text-gray-400 mb-5 rounded-lg">

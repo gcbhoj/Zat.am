@@ -13,7 +13,7 @@ const CategoryDisplayContainer = ({ isHome = false }) => {
       const result = {};
       for (const category of GameCategory) {
         const games = await fetchByCategory(category.code);
-        result[category.code] = isHome ? games.slice(0, 4) : games;
+        result[category.code] = isHome ? games.slice(0, 5) : games;
       }
       setGamesByCategory(result);
     };

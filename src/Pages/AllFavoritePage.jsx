@@ -8,7 +8,7 @@ const AllFavoritePage = ({ isHome = false }) => {
   useEffect(() => {
     const loadGames = async () => {
       const games = await fetchByRating();
-      setFavoriteGames(isHome ? games.slice(0, 4) : games);
+      setFavoriteGames(isHome ? games.slice(0, 5) : games);
     };
     loadGames();
   }, [isHome]);

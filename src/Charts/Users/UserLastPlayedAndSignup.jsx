@@ -21,7 +21,7 @@ const UserLastPlayedAndSignup = () => {
   }, []);
 
   const options = {
-    title: "User Login & Game Play Activity",
+    title: "User Last SignIn & Last Played",
     curveType: "function",
     legend: {
       position: "bottom",
@@ -31,7 +31,7 @@ const UserLastPlayedAndSignup = () => {
     titleTextStyle: { color: "#CE8147", fontSize: 14 },
     chartArea: { width: "85%", height: "65%", left: "10%", top: "15%" },
     hAxis: {
-      title: "User Name",
+      title: "Account Created",
       titleTextStyle: { color: "#CE8147", fontSize: 13 },
       textStyle: { color: "#CE8147", fontSize: 12, fontName: "serif" },
       slantedText: true,

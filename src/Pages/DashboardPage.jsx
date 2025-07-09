@@ -1,8 +1,8 @@
 import React from "react";
 import GameAnalytics from "./GameAnalytics";
 import MoreButton from "../UIComponents/MoreButton";
-import { Link } from "react-router-dom";
-import UserAnalytics from "./UserAnalytics"
+import { Link, NavLink } from "react-router-dom";
+import UserAnalytics from "./UserAnalytics";
 const DashboardPage = () => {
   return (
     <div className="flex flex-col gap-4 m-5">
@@ -13,9 +13,11 @@ const DashboardPage = () => {
 
       <div className="flex flex-col gap-0">
         <div className="flex justify-end mr-2">
-          <MoreButton />
+          <NavLink to="/userAnalytics" target="_blank">
+            <MoreButton />
+          </NavLink>
         </div>
-        <UserAnalytics />
+        <UserAnalytics isDashboard={true} />
       </div>
 
       <div className="flex flex-col gap-0">

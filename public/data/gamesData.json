@@ -1,0 +1,162 @@
+{
+  "gamesData": [
+    {
+      "id": "GD_20250708_143711_661_710",
+      "gameId": "G_20250708_142302_244_387",
+      "highScoreDetails": [
+        {
+          "highScore": 5000,
+          "userId": "U_101",
+          "timeStamp": "2025-07-08T18:37:11.662Z"
+        }
+      ],
+      "rating": 4.5,
+      "lastUpdated": "2025-07-08T18:37:53.693Z",
+      "playCount": 3,
+      "totalReviews": 3,
+      "averageTimePlayed": 2666.6666666666665,
+      "scoreDetails": [
+        {
+          "userId": "U_101",
+          "score": 5000,
+          "playTime": 5000,
+          "rating": 4.5,
+          "timeStamp": "2025-07-08T18:37:11.662Z"
+        },
+        {
+          "userId": "U_102",
+          "score": 2500,
+          "playTime": 2500,
+          "rating": 4.5,
+          "timeStamp": "2025-07-08T18:37:38.090Z"
+        },
+        {
+          "userId": "U_103",
+          "score": 500,
+          "playTime": 500,
+          "rating": 4.5,
+          "timeStamp": "2025-07-08T18:37:53.693Z"
+        }
+      ],
+      "totalScreenTime": 8000,
+      "lastPlayed": "2025-07-08T18:37:53.693Z",
+      "averageScore": 2666.6666666666665,
+      "gameName": "crossword Gita-Version"
+    },
+    {
+      "id": "GD_20250708_143910_379_509",
+      "gameId": "G_20250708_142406_634_153",
+      "highScoreDetails": [
+        {
+          "highScore": 4999,
+          "userId": "U_101",
+          "timeStamp": "2025-07-08T18:39:10.379Z"
+        }
+      ],
+      "rating": 4.5,
+      "lastUpdated": "2025-07-08T18:39:32.166Z",
+      "playCount": 2,
+      "totalReviews": 2,
+      "averageTimePlayed": 3000,
+      "scoreDetails": [
+        {
+          "userId": "U_101",
+          "score": 4999,
+          "playTime": 4000,
+          "rating": 4.5,
+          "timeStamp": "2025-07-08T18:39:10.379Z"
+        },
+        {
+          "userId": "U_103",
+          "score": 4989,
+          "playTime": 2000,
+          "rating": 4.5,
+          "timeStamp": "2025-07-08T18:39:32.166Z"
+        }
+      ],
+      "totalScreenTime": 6000,
+      "lastPlayed": "2025-07-08T18:39:32.166Z",
+      "averageScore": 4994,
+      "gameName": "tic-tac-toe"
+    },
+    {
+      "id": "GD_20250708_144207_281_219",
+      "gameId": "G_20250708_142424_807_240",
+      "highScoreDetails": [
+        {
+          "highScore": 1000,
+          "userId": "U_103",
+          "timeStamp": "2025-07-08T18:42:07.282Z"
+        }
+      ],
+      "rating": 4.5,
+      "lastUpdated": "2025-07-08T18:42:21.602Z",
+      "playCount": 2,
+      "totalReviews": 2,
+      "averageTimePlayed": 1500,
+      "scoreDetails": [
+        {
+          "userId": "U_103",
+          "score": 1000,
+          "playTime": 2000,
+          "rating": 4.5,
+          "timeStamp": "2025-07-08T18:42:07.282Z"
+        },
+        {
+          "userId": "U_104",
+          "score": 999,
+          "playTime": 1000,
+          "rating": 4.5,
+          "timeStamp": "2025-07-08T18:42:21.602Z"
+        }
+      ],
+      "totalScreenTime": 3000,
+      "lastPlayed": "2025-07-08T18:42:21.602Z",
+      "averageScore": 999.5,
+      "gameName": "surya namaskar"
+    },
+    {
+      "id": "GD_20250708_144434_922_020",
+      "gameId": "G_20250708_142629_639_361",
+      "averageTimePlayed": 1000,
+      "highScoreDetails": [
+        {
+          "highScore": 7000,
+          "userId": "U_105",
+          "timeStamp": "2025-07-08T18:44:34.922Z"
+        }
+      ],
+      "rating": 4.5,
+      "lastUpdated": "2025-07-08T19:39:35.776Z",
+      "playCount": 3,
+      "totalReviews": 3,
+      "scoreDetails": [
+        {
+          "userId": "U_105",
+          "score": 7000,
+          "playTime": 1000,
+          "rating": 4.5,
+          "timeStamp": "2025-07-08T18:44:34.922Z"
+        },
+        {
+          "userId": "U_107",
+          "score": 6000,
+          "playTime": 1000,
+          "rating": 4.5,
+          "timeStamp": "2025-07-08T18:44:56.638Z"
+        },
+        {
+          "userId": "U_107",
+          "score": 5999,
+          "playTime": 1000,
+          "rating": 4.5,
+          "timeStamp": "2025-07-08T19:39:35.776Z"
+        }
+      ],
+      "totalScreenTime": 3000,
+      "lastPlayed": "2025-07-08T19:39:35.775Z",
+      "averageScore": 6333,
+      "gameName": "naama kima"
+    }
+  ]
+}

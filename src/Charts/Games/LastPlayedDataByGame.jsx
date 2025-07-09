@@ -20,6 +20,8 @@ const LastPlayedDataByGame = () => {
 
   const options = {
     title: "Game Last Played",
+    titleTextStyle: { color: "#CE8147", fontSize: 14 },
+
     hAxis: {
       title: "Games Name",
       slantedText: true,

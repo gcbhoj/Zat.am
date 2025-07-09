@@ -27,7 +27,7 @@ const MainPage = () => {
 
   return (
     <>
-      <div className={`relative  ${isDark ? "" : "bg-white"}`}>
+      <div className={`relative  ${isDark ? "" : "bg-neutral-100"}`}>
         {/* Background based on theme */}
         {isDark ? <AnimatedBackground /> : <LightBackground />}
 

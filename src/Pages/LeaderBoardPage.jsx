@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import LeaderBoardAllGames from "../components/LeaderBoardAllGames";
 import LeaderBoardByGame from "../components/LeaderBoardByGame";
-// import other future components here...
-
+import TopPlayers from "../components/TopPlayers";
 const views = {
+  topPlayers: {
+    label: "Top Players",
+    component: <TopPlayers />,
+  },
   all: {
     label: "All Games",
     component: <LeaderBoardAllGames />,
@@ -12,15 +15,10 @@ const views = {
     label: "By Game",
     component: <LeaderBoardByGame />,
   },
-  // You can add more views like this:
-  // topPlayers: {
-  //   label: "Top Players",
-  //   component: <TopPlayers />,
-  // },
 };
 
 const LeaderBoardPage = () => {
-  const [activeView, setActiveView] = useState("all");
+  const [activeView, setActiveView] = useState(Object.keys(views)[0]);
 
   return (
     <>

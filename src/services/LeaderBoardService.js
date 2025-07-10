@@ -87,3 +87,33 @@ export const leaderBoardByGame = async () => {
     return [];
   }
 };
+
+export const byUser = async () => {
+  try {
+    const data = await fetchGameData();
+
+    if (!Array.isArray(data)) {
+      throw new Error("Invalid Data Format");
+    }
+
+    const leaderboard = data
+      .filter((game) => game.gameName && Array.isArray(game.scoreDetails))
+      .flatMap((game) =>
+        game.scoreDetails.map((score) => ({
+          gameName: game.gameName,
+          userId: score.userId,
+          achievedOn: score.timeStamp,
+          score: score.score,
+        }))
+      )
+      .sort(
+        (a, b) =>
+          b.score - a.score || new Date(b.achievedOn) - new Date(a.achievedOn)
+      ) // Sort by score, then timestamp
+      .slice(0, 10);
+
+    return leaderboard;
+  } catch (error) {
+    console.log("Error Fetching Data:", error);
+  }
+};

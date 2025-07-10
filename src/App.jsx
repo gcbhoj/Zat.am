@@ -15,6 +15,7 @@ import AllFavoritePage from "./Pages/AllFavoritePage";
 import CategoryPage from "./Pages/CategoryPage";
 import GameAnalytics from "./Pages/GameAnalytics";
 import UserAnalytics from "./Pages/UserAnalytics";
+import ControlPanelPage from "./Pages/ControlPanelPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -29,6 +30,7 @@ const router = createBrowserRouter(
       <Route path="/category/:code" element={<CategoryPage />} />
       <Route path="/gameAnalytics" element={<GameAnalytics />} />
       <Route path="/userAnalytics" element={<UserAnalytics />} />
+      <Route path="/cp" element={<ControlPanelPage />} />
     </Route>
   )
 );

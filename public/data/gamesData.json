@@ -6,7 +6,7 @@
       "highScoreDetails": [
         {
           "highScore": 5000,
-          "userId": "U_101",
+          "userId": "tom",
           "timeStamp": "2025-07-08T18:37:11.662Z"
         }
       ],
@@ -17,21 +17,21 @@
       "averageTimePlayed": 2666.6666666666665,
       "scoreDetails": [
         {
-          "userId": "U_101",
+          "userId": "tom",
           "score": 5000,
           "playTime": 5000,
           "rating": 4.5,
           "timeStamp": "2025-07-08T18:37:11.662Z"
         },
         {
-          "userId": "U_102",
+          "userId": "dick",
           "score": 2500,
           "playTime": 2500,
           "rating": 4.5,
           "timeStamp": "2025-07-08T18:37:38.090Z"
         },
         {
-          "userId": "U_103",
+          "userId": "harry",
           "score": 500,
           "playTime": 500,
           "rating": 4.5,
@@ -49,7 +49,7 @@
       "highScoreDetails": [
         {
           "highScore": 4999,
-          "userId": "U_101",
+          "userId": "tom",
           "timeStamp": "2025-07-08T18:39:10.379Z"
         }
       ],
@@ -60,14 +60,14 @@
       "averageTimePlayed": 3000,
       "scoreDetails": [
         {
-          "userId": "U_101",
+          "userId": "tom",
           "score": 4999,
           "playTime": 4000,
           "rating": 4.5,
           "timeStamp": "2025-07-08T18:39:10.379Z"
         },
         {
-          "userId": "U_103",
+          "userId": "harry",
           "score": 4989,
           "playTime": 2000,
           "rating": 4.5,
@@ -85,7 +85,7 @@
       "highScoreDetails": [
         {
           "highScore": 1000,
-          "userId": "U_103",
+          "userId": "harry",
           "timeStamp": "2025-07-08T18:42:07.282Z"
         }
       ],
@@ -96,14 +96,14 @@
       "averageTimePlayed": 1500,
       "scoreDetails": [
         {
-          "userId": "U_103",
+          "userId": "harry",
           "score": 1000,
           "playTime": 2000,
           "rating": 4.5,
           "timeStamp": "2025-07-08T18:42:07.282Z"
         },
         {
-          "userId": "U_104",
+          "userId": "jack",
           "score": 999,
           "playTime": 1000,
           "rating": 4.5,
@@ -122,7 +122,7 @@
       "highScoreDetails": [
         {
           "highScore": 7000,
-          "userId": "U_105",
+          "userId": "jones",
           "timeStamp": "2025-07-08T18:44:34.922Z"
         }
       ],
@@ -132,21 +132,21 @@
       "totalReviews": 3,
       "scoreDetails": [
         {
-          "userId": "U_105",
+          "userId": "jones",
           "score": 7000,
           "playTime": 1000,
           "rating": 4.5,
           "timeStamp": "2025-07-08T18:44:34.922Z"
         },
         {
-          "userId": "U_107",
+          "userId": "rajan",
           "score": 6000,
           "playTime": 1000,
           "rating": 4.5,
           "timeStamp": "2025-07-08T18:44:56.638Z"
         },
         {
-          "userId": "U_107",
+          "userId": "rajan",
           "score": 5999,
           "playTime": 1000,
           "rating": 4.5,

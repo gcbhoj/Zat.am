@@ -7,7 +7,6 @@ const LeaderBoardAllGames = () => {
   const fetchGameData = async () => {
     try {
       const data = await leaderBoardAllGames();
-      console.log("gamedata:", data);
       setGameData(data);
     } catch (error) {
       console.error("Error fetching leaderboard data:", error);
@@ -32,8 +31,8 @@ const LeaderBoardAllGames = () => {
   };
 
   return (
-    <div className="m-5 p-5 flex flex-col items-center dark:text-gray-400 rounded-xl shadow-md">
-      <h2 className="text-3xl font-serif mb-4 capitalize text-center dark:text-gray-400 tracking-[1.25px] flex flex-wrap">
+    <div className="m-5 p-5 flex flex-col items-center dark:text-gray-400 rounded-xl  dark:border-1 shadow-lg bg-neutral-100 dark:bg-transparent">
+      <h2 className="text-3xl font-serif mb-4 capitalize text-center dark:text-gray-400 tracking-[1.25px] flex flex-wrap border-b">
         Games LeaderBoard
       </h2>
 

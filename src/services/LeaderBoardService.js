@@ -59,3 +59,31 @@ export const leaderBoardAllGames = async () => {
     return [];
   }
 };
+
+export const leaderBoardByGame = async () => {
+  try {
+    const data = await fetchGameData();
+
+    if (!Array.isArray(data)) {
+      throw new Error("Invalid Data Format");
+    }
+    const formattedData = data
+      .filter(
+        (game) =>
+          game.gameName &&
+          Array.isArray(game.scoreDetails) &&
+          game.scoreDetails.length > 0
+      )
+      .map((game) => ({
+        gameName: game.gameName,
+        scoreBoard: game.scoreDetails
+          .sort((a, b) => b.score - a.score)
+          .slice(0, 10),
+      }));
+
+    return formattedData;
+  } catch (error) {
+    console.error("Error fetching Data:", error.message);
+    return [];
+  }
+};

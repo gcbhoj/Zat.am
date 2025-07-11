@@ -5,7 +5,9 @@ const InputBox = ({
   width = "w-80",
   height = "h-12",
   onChange = () => { },
-  value =""
+  value = "",
+  step = "",
+  required =""
 }) => {
   return (
     <div className={`relative mt-1 ${width}`}>
@@ -16,13 +18,15 @@ const InputBox = ({
         id={name}
         placeholder={label}
         onChange={onChange}
+        step={step}
+        required={ required}
         className={`
           peer block w-full appearance-none border-2
           border-gray-950 dark:border-gray-400
           rounded-md px-3 pt-5 pb-1 text-sm
           placeholder-transparent focus:outline-none focus:ring-2
           focus:ring-zinc-500 dark:focus:ring-xinc-500
-          ${height} text-center shadow shadow-gray-300
+          ${height} ${step} ${required} text-center shadow shadow-gray-300
           font-serif tracking-[.13em]  text-black dark:text-white
         `}
       />

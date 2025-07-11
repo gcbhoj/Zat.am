@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import AddGameForm from "../AdminPanel/AddNewGame";
-
+import AdminSearch from "../AdminPanel/AdminSearch";
+import Button from "../UIComponents/Button";
 
 const GamesPanelPage = () => {
   const [activePanel, setActivePanel] = useState(null);
@@ -10,9 +11,9 @@ const GamesPanelPage = () => {
       case "add":
         return <AddGameForm />;
       case "search":
-        return ;
+        return <AdminSearch />;
       case "edit":
-        return ;
+        return;
       default:
         return <div>Select an action</div>;
     }
@@ -21,7 +22,7 @@ const GamesPanelPage = () => {
   const actionLabelMap = {
     add: "Add Game",
     search: "Search Game",
-    edit: "Edit Game",
+    edit: "Edit Game Info.",
   };
 
   return (
@@ -36,12 +37,15 @@ const GamesPanelPage = () => {
             <div className="text-[18px] tracking-[1.25px] font-serif border-2 flex justify-center h-12 items-center rounded-xl mb-4">
               {actionLabelMap[activePanel]}
             </div>
-            <button
+            <Button
+              label="back"
               onClick={() => setActivePanel(null)}
-              className="w-full bg-red-400 text-white font-bold py-2 px-4 rounded-xl hover:bg-red-500 transition"
-            >
-              Back
-            </button>
+              background="bg-zinc-400"
+              width="w-24"
+              height="h-10 rounded-xl"
+              margin="m-5"
+              darkText="text-gray-950"
+            />
           </>
         ) : (
           <ul>

@@ -30,6 +30,7 @@ const AddNewGame = () => {
           label="Enter Game Name"
           value={newGameInfo.gameName}
           type="text"
+          required={true}
           name="gameName"
           onChange={(e) => updateNewGame({ gameName: e.target.value })}
         />
@@ -55,12 +56,12 @@ const AddNewGame = () => {
 
       {/* Game Image */}
       <div className="mb-6 flex flex-col gap-2">
-        <h3 className="font-semibold">Insert Game Image Link or Upload File</h3>
         <InputBox
           label="Insert Game Image Link"
           type="url"
           value={newGameInfo.gameImage}
           name="gameImage"
+          required={true}
           onChange={(e) => updateNewGame({ gameImage: e.target.value })}
         />
       </div>
@@ -71,6 +72,7 @@ const AddNewGame = () => {
           label="Enter Game Link"
           type="url"
           name="gameLink"
+          required={true}
           value={newGameInfo.gameLink}
           onChange={(e) => updateNewGame({ gameLink: e.target.value })}
         />
@@ -86,6 +88,7 @@ const AddNewGame = () => {
           id="difficulty"
           className="border rounded px-2 py-1 w-full "
           value={newGameInfo.difficulty}
+          required={true}
           onChange={(e) => updateNewGame({ difficulty: e.target.value })}
         >
           <option value="">-- Select Difficulty --</option>
@@ -108,6 +111,7 @@ const AddNewGame = () => {
           type="text"
           name="developer"
           value={newGameInfo.developer}
+          required={true}
           onChange={(e) => updateNewGame({ developer: e.target.value })}
         />
       </div>
@@ -117,6 +121,7 @@ const AddNewGame = () => {
         <label className="font-semibold">Rating:</label>
         <StarRating rating={parseFloat(newGameInfo.rating)} />
         <input
+          required={true}
           type="range"
           min="0"
           max="5"
@@ -134,6 +139,7 @@ const AddNewGame = () => {
       <div className="mb-6">
         <label className="block mb-1 font-semibold">Game Version</label>
         <input
+          required={true}
           type="number"
           step="0.01"
           min={1}

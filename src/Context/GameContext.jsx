@@ -1,4 +1,5 @@
 import { createContext, useCallback, useState } from "react";
+import { baseUrl, postRequest } from "../services/GameService/GameService";
 import { GameCategory } from "../Models/GameCategory";
 import { ToastContainer, toast } from "react-toastify";
 
@@ -34,20 +35,20 @@ export const GameContextProvider = ({ children }) => {
       setNewGameSubmissionError(null);
 
       try {
-        const response = await fetch("http://localhost:5000/api/games/addNew", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(newGameInfo),
-        });
+        const response = await postRequest(
+          `${baseUrl}/games/addNew`,
+          JSON.stringify(newGameInfo)
+        );
+        setIsNewGameSubmitting(false);
 
-        const data = await response.json();
+        if (response.error) {
+          toast.error(response.message);
+        }
 
-        toast(data.message);
 
-        if (!response.ok)
-          throw new Error(data.message || "Something went wrong");
+        toast(response.message);
 
-        setNewGame(data); // Update the submitted game
+        setNewGame(response); // Update the submitted game
         setNewGameInfo({
           gameName: "",
           gameCategory: [],

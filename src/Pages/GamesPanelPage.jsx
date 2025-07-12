@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import AddGameForm from "../AdminPanel/AddNewGame";
-import AdminSearch from "../AdminPanel/AdminSearch";
+import AdminViewGame from "../AdminPanel/AdminViewGame";
 import Button from "../UIComponents/Button";
 
 const GamesPanelPage = () => {
@@ -10,10 +10,8 @@ const GamesPanelPage = () => {
     switch (activePanel) {
       case "add":
         return <AddGameForm />;
-      case "search":
-        return <AdminSearch />;
       case "edit":
-        return;
+        return <AdminViewGame />;
       default:
         return <div>Select an action</div>;
     }
@@ -21,13 +19,12 @@ const GamesPanelPage = () => {
 
   const actionLabelMap = {
     add: "Add Game",
-    search: "Search Game",
-    edit: "Edit Game Info.",
+    edit: "View & Edit",
   };
 
   return (
     <div className="flex flex-col sm:flex-row gap-4 p-4 rounded-lg">
-      <div className="sm:w-1/3 border-r-2 pr-4">
+      <div className="sm:w-2/8 border-r-2 pr-4">
         <h3 className="text-xl font-serif italic mb-3 underline underline-offset-4">
           Actions
         </h3>
@@ -55,17 +52,12 @@ const GamesPanelPage = () => {
             >
               Add Game
             </li>
-            <li
-              onClick={() => setActivePanel("search")}
-              className="cursor-pointer text-[18px] tracking-[1.25px] font-serif border-2 flex justify-center h-12 items-center rounded-xl mb-10"
-            >
-              Search Game
-            </li>
+
             <li
               onClick={() => setActivePanel("edit")}
               className="cursor-pointer text-[18px] tracking-[1.25px] font-serif border-2 flex justify-center h-12 items-center rounded-xl mb-10"
             >
-              Edit Game
+              View & Edit
             </li>
           </ul>
         )}

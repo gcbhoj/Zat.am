@@ -18,6 +18,7 @@ import UserAnalytics from "./Pages/UserAnalytics";
 import ControlPanelPage from "./Pages/ControlPanelPage";
 import { GameContext } from "./Context/GameContext";
 import { GameContextProvider } from "./Context/GameContext";
+import EditPage from "./AdminPanel/EditPage";
 
 import { Bounce, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -37,6 +38,7 @@ function App() {
         <Route path="/gameAnalytics" element={<GameAnalytics />} />
         <Route path="/userAnalytics" element={<UserAnalytics />} />
         <Route path="/cp" element={<ControlPanelPage />} />
+        <Route path="/edit" element={<EditPage />} />
       </Route>
     )
   );

@@ -146,12 +146,7 @@ const FooterComponent = () => {
       </div>
 
       {/* Copyright */}
-      <div className="col-span-2 flex justify-center">
-        <p className="text-[12px] font-serif dark:text-gray-300">
-          &copy; {new Date().getFullYear()} Samskrita Bharati. All rights
-          reserved.
-        </p>
-      </div>
+w
     </div>
   );
 };

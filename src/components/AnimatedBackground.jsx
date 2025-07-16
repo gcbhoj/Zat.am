@@ -8,6 +8,7 @@ const GalaxyBackground = () => {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
+    // Scene setup
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
       75,
@@ -21,6 +22,7 @@ const GalaxyBackground = () => {
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setPixelRatio(window.devicePixelRatio);
 
+    // Stars
     const starCount = 6000;
     const positions = new Float32Array(starCount * 3);
     for (let i = 0; i < starCount; i++) {
@@ -48,6 +50,7 @@ const GalaxyBackground = () => {
     const starField = new THREE.Points(starGeometry, starMaterial);
     scene.add(starField);
 
+    // Animation loop
     const animate = () => {
       starField.rotation.x += 0.0005;
       starField.rotation.y += 0.0007;
@@ -55,21 +58,22 @@ const GalaxyBackground = () => {
       requestAnimationFrame(animate);
     };
 
-    animate();
+    // Defer animation to next frame (to avoid invalid uniforms)
+    requestAnimationFrame(animate);
 
+    // Cleanup
     return () => {
+      starGeometry.dispose();
+      starMaterial.dispose();
+      scene.remove(starField);
       renderer.dispose();
     };
   }, []);
 
   return (
-    <>
-      {/* Galaxy canvas background */}
-      <div className="fixed inset-0 z-[-2]">
-        <canvas ref={canvasRef} className="w-full h-full" />
-      </div>
-
-    </>
+    <div className="fixed inset-0 z-[-2]">
+      <canvas ref={canvasRef} className="w-full h-full" />
+    </div>
   );
 };
 
